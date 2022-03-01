@@ -1,5 +1,6 @@
 # amax.whitepaper
 
-## Armonia Multi-chain Blockchain Platform Whitepaper [[amax.whitepaper-en.md]]
-
-## Armonia 多链 Platform Whitepaper [[amax.whitepaper-en.md]]
+|Content | Resource |
+|---|---|
+| Armonia Multi-chain Blockchain Whitepaper | [amax.whitepaper-en.md](amax.whitepaper-en.md) |
+| Armonia 多链区块链白皮书 | [amax.whitepaper-en.md](amax.whitepaper-cn.md) |
