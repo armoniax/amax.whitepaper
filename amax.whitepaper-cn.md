@@ -43,7 +43,7 @@ Armonia是一个子母链架构的多链技术平台，其中有安全、高性�
 
 ## 整体架构
 Armonia作为一个多链架构的区块链技术平台，采用了子母链的特殊关系，而不是其它多链体系的星型模式，其结构如下图所示：
-<img src="./assets/Armonia-Multichain-Arch.png" />
+<img src="./assets/Armonia-Multichain-Arch.png" width=600 />
 
 其核心设计为：
 - 母链采用了特有的APoS共识机制和高性能的WASM虚拟机，采用低交易成本费用模型，和特有的账户而非地址模型
@@ -58,10 +58,10 @@ Armonia作为一个多链架构的区块链技术平台，采用了子母链的�
 这类子链可以发行和拥有自己的原生代币，也可以直接采用母链的原生代币。比如说有一条子链采用了gas模型，它的gas支付可以来自于母链跨链而来的AMAX原生代币。在这种情况下，子链对AMAX的消耗也就增加了对母链原生代币的需求，因此可以为母链原生代币进行价值赋能。
 
 我们把每一条单链模拟为字母T：其中横线代表区块链上交易和块数据，竖线代表了在某个高度上的区块链状态数据（比如说账户余额状态）同时把开放式的公链单链用虚线包围起来，表示一个开放但是单独的网络环境。把私有链通过实线包围起来，代表一个相对封闭的网络环境。其中母链可以为所有子链的生成和信任锚定基础，以及资产交易交换的平台。整体多链系统构成了如下的区块链森林体系：
-<img src="./assets/Armonia-Multichain-Forest.png" title="Armonia多链森林体系" />
+<img src="./assets/Armonia-Multichain-Forest.png" title="Armonia多链森林体系" width=600 />
 
 如果考虑到全网所有的现有区块链和Armonia多链体系的关系如下：
-<img src="./assets/armonia-multichain-scope.png" title="Armonia多链和全网区块链关系" />
+<img src="./assets/armonia-multichain-scope.png" title="Armonia多链和全网区块链关系" width=600 />
 
 ### 母链基本特征
 
@@ -120,7 +120,7 @@ Armonia核心团队基于以上问题，提出了一种混合治理模型的且�
 
 流程示意图如下：
 
-<img src="./assets/armonia-cross-bridge-cn.png" width=400/>
+<img src="./assets/armonia-cross-bridge-cn.png" width=600 />
 
 
 
