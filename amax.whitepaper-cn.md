@@ -311,7 +311,7 @@ Armonia里面的一些基本DAO有如下：
 在实现v3.0之后的技术路线图，必将由`developer dao`来全面驱动和治理实现完成。
 
 ## 参考和引用
-- DPOS: 
-- aBFT:
-- DAO: 
-- 最终一致性：
+- DPOS: https://steemit.com/dpos/@dantheman/dpos-consensus-algorithm-this-missing-white-paper
+- aBFT: https://hedera.com/learning/what-is-asynchronous-byzantine-fault-tolerance-abft
+- DAO: https://consensys.net/blog/blockchain-explained/what-is-a-dao-and-how-do-they-work/
+- 最终一致性：https://academy.binance.com/en/glossary/finality
