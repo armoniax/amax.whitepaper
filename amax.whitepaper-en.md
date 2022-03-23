@@ -8,21 +8,21 @@
   - [Objecives & Principles](#objecives--principles)
   - [Overall architecture](#overall-architecture)
     - [Multichain model](#multichain-model)
-    - [多链分层架构](#多链分层架构)
-    - [多链交易路由](#多链交易路由)
-    - [多链体系建设应用场景](#多链体系建设应用场景)
-    - [母链基本特征](#母链基本特征)
-    - [母链共识机制](#母链共识机制)
-    - [母链账户系统](#母链账户系统)
-    - [第一条子链](#第一条子链)
-    - [跨链机制](#跨链机制)
-  - [通证经济模型](#通证经济模型)
-    - [通证分配](#通证分配)
-    - [万物皆挖矿](#万物皆挖矿)
-  - [We3的建设和支持](#we3的建设和支持)
-  - [xDAO治理](#xdao治理)
-  - [技术路线图](#技术路线图)
-  - [参考和引用](#参考和引用)
+    - [Multichain layered architecture](#multichain-layered-architecture)
+    - [Multichain transaction routing](#multichain-transaction-routing)
+    - [Multichain enabled applicaiton scenariors](#multichain-enabled-applicaiton-scenariors)
+    - [Armonia mother chain profile](#armonia-mother-chain-profile)
+    - [Armonia mother chain consensus algorithm](#armonia-mother-chain-consensus-algorithm)
+    - [Armonia-mother-chain accounts](#armonia-mother-chain-accounts)
+    - [First Armonia-child-chain](#first-armonia-child-chain)
+    - [Cross-chain mechanism](#cross-chain-mechanism)
+  - [Tokenomics](#tokenomics)
+    - [Token distribution](#token-distribution)
+    - [Mining of Things (MoT)](#mining-of-things-mot)
+  - [Infrasturcture support for We3](#infrasturcture-support-for-we3)
+  - [xDAO governance](#xdao-governance)
+  - [Technology roadmap](#technology-roadmap)
+  - [Reference](#reference)
 ## Introduction
 Looking back at the development history of blockchain technology, starting with distributed ledger, to smart contract technlogy that supports all sorts of application logic, and onto providing layer-0 & lay-1 SDK technology for quickly building brand new blockchains, and building layer-2 to solve problems that couldn't be solved in layer-1 technoloy, as well as bi-directional cross-chain technology, one can easily find that blockchain is becoming more sophisticated in order to fufill growing needs of decentraliazed applications.
 
@@ -70,7 +70,7 @@ Armonia as a multichain platform has adopted a unique mother-children-chain mode
 
 <img src="./assets/Armonia-Multichain-Forest.png" title="Armonia多链森林体系" width=800 />
 
-### 多链分层架构
+### Multichain layered architecture
 
 如下图所示，在Armonia多链体系下面将出现以下的多链分层架构：
 <img src="./assets/multichain-layered-arch.png" width=800 />
@@ -79,7 +79,7 @@ Armonia as a multichain platform has adopted a unique mother-children-chain mode
 
 在多链分层架构下，Armonia会提供L0-base, L0, L1的模板软件和相应SDK，允许生态区块链建方可以自由选择模块、配置好参数，最后快速搭建一个个性化的单链，并且可以和生态内的各个子链和母链之间可自由交互。
 
-### 多链交易路由
+### Multichain transaction routing
 
 L0-base作为基础层的共用模块，里面可以提供单播、组播、和广播的三种模式的多链体系覆盖模式：
 <img src="./assets/tx_multichain_comm.png" width=800 />
@@ -88,7 +88,7 @@ L0-base作为基础层的共用模块，里面可以提供单播、组播、和�
 
 <img src="./assets/tx_multichain_network.png" width=800 />
 
-### 多链体系建设应用场景
+### Multichain enabled applicaiton scenariors
 在多链生态体系中，可以建设包括且不限制为以下的应用场景：
 - 通过母链实现生态内各类资产的发行、转移和交易、快速兑换;
 - 在母链提供生态建设的各类激励矿池；
@@ -103,7 +103,7 @@ L0-base作为基础层的共用模块，里面可以提供单播、组播、和�
 
 
 
-### 母链基本特征
+### Armonia mother chain profile
 
 | 特征 | 说明 | 备注 |
 |---|---|---|
@@ -116,7 +116,7 @@ L0-base作为基础层的共用模块，里面可以提供单播、组播、和�
 | 出块速度 | 1 秒 | |
 | TPS | 5000+ | 基准测试为转账交易，`v1.0`即实现目标 |
 
-### 母链共识机制
+### Armonia mother chain consensus algorithm
 
 作为多链森林体系的创始母链，担当了所有其它子链的信任基石和底层价值通证来源。也就是说所有子链的原生代币必须来自于母链，用于子链的基础运作所需（例如交易燃料费使用）。因此确保母链的安全性和稳定性尤为重要。而区块链的安全性主要体现在足够的去中心化程度和抗审查能力，这在技术的实现上需要做到以下几点：
 
@@ -156,14 +156,14 @@ APOS共识机制的核心框架如下：
 
 另外考虑到自创世开始的第一年内，Armonia母链主要是核心团队在维护和开发，并不会立即对外开放投票，所以在第一年内即使维护和运行了21个超级节点，每一个挖出的块并没有任何增发奖励。在第二年随着节点投票的开始，新的节点引入之后，在满足一定的质押比例后（比如5%），每挖出的块都会有增发奖励给到该记账节点。
 
-### 母链账户系统
+### Armonia-mother-chain accounts
 
 有别于其它类似比特币、以太坊公链等采用了地址来标识用户的链上账户（通常由公钥来推导出用户地址）, Armonia母链采用了账户模型，账户绑定了一个或者多个公钥，并且需要用户提前注册好才能使用。Armonia母链规定所有的账户都由一个唯一名称来标识，名称的最大长度为12个字符（[`1-5`,`a-z`,`.`]), 未来可以扩展到24字符([`1-9`,`a-z`,`.`,`#`,`@`])。该名称由帐户的创建者指定。帐户创建者必须使用 `$AMAX`代币预留一定的RAM数值用来存储新帐户，直至新帐户质押自己的代币来预留自己的RAM。
 
 在去中心化的背景下，应用程序开发人员在新用户注册时，会象征性地支付账户创建费用。传统企业为获取客户，已经以广告、免费服务等形式为每个用户花费了大量资金。相比之下，创建新的区块链账户所需的资金成本微不足道。不过好在如果用户在注册另一个应用程序时已经创建了帐户，那就没有必要再次创建了。
 
 
-### 第一条子链
+### First Armonia-child-chain
 考虑到和世界上目前最流行的以太坊区块链技术的兼容，Armonia的第一条子链采用以太坊的底层核心技术，包括EVM虚拟机和地址模型等，具体特征如下：
 | 特征 | 说明 | 备注 |
 |---|---|---|
@@ -175,7 +175,7 @@ APOS共识机制的核心框架如下：
 | 出块速度 | 3 秒 | |
 | TPS | 160+ | 基准测试为转账交易，`v1.0`即实现目标 ｜
 
-### 跨链机制
+### Cross-chain mechanism
 
 在一个多链的生态体系里面，可以让链上发行的资产从原链映射到另外一条链或者反之是至关重要的。某种意义上讲，跨链增加了链上资产的流动性和可用性。同时，将一个资产从原链跨到另外一条链，也可以自由跨链回来，可以满足资产用户的在区块链生态内的全部需求。
 
@@ -223,14 +223,14 @@ Armonia核心团队基于以上问题，提出了一种混合治理模型的且�
 
 <img src="./assets/armonia-cross-bridge-cn.png" width=800 />
 
-## 通证经济模型
+## Tokenomics
 
 Armonia的母链发行了`$AMAX`的原生代币，不光用于母链的运作所需资产，也可以为子链运行所需，甚至成为它们的原生代币。特别是由Armonia核心团队主导的子链都将采用`$AMAX`作为子链运行所需的原生代币。
 
 `$AMAX`的设计发行总量最大值为210亿枚，但是第一阶段的设计发行量为10亿枚，并且只有实际可流通市值在100倍增长的前提下，DAO组织才考虑增发的可能性。
 
 
-### 通证分配
+### Token distribution
 
 `$AMAX`的总量分配如下：
 <img src="./assets/amax-total-allocation.png" width=800 />
@@ -245,7 +245,7 @@ Armonia的母链发行了`$AMAX`的原生代币，不光用于母链的运作所
 
 最后，占75%的币量将用于生态内的各类挖矿，在Armonia称为万物即挖矿。
 
-### 万物皆挖矿
+### Mining of Things (MoT)
 在Armonia的生态建设理念里，凡是对生态做出了某种贡献的，增加了整体价值的，都可以称为挖矿的行为，必定有相应的收益激励。
 
 总体上从大的方面讲，有以下挖矿的方式存在：
@@ -264,7 +264,7 @@ Armonia的母链发行了`$AMAX`的原生代币，不光用于母链的运作所
 - 提供预言机服务的行为
 - 从第三方公链把主流资产跨链过来的行为
 
-## We3的建设和支持
+## Infrasturcture support for We3
 要建设Web3，意味着很多中心化下的互联网的基础服务都可以在去中心化的方式下提供出来，并通过代币结算被满足应用层需求的各项基础设施服务。
 
 Web3的去中心化服务建设包括但是不限制于以下类型：
@@ -277,7 +277,7 @@ Web3的去中心化服务建设包括但是不限制于以下类型：
 
 如果有效地衡量以上基础服务的贡献，并相应用`$AMAX`来激励，是Armonia支持web3需要解决的一个课题。
 
-## xDAO治理
+## xDAO governance
 在去中心化的世界里面，技术、产品还有整个生态的发展，有很多需要优化改进的地方，这都需要有一个链下治理决策然后完成链上升级变更的过程。但是这种治理必须同样符合去中心化理念，是由社区利益相关者积极参与，通过链上投票完成各项提议复议，最后执行的过程。
 
 因此有必要建设Armonia的各项去中心化自助组织DAO来驱动整个区块链技术、应用和生态建设和长期发展。并且我们需要有一个顶级的DAO组织来管理下级的各类DAO组织来驱动各项建设，我们把这个称为`Armonia xDAO`。
@@ -301,7 +301,7 @@ Armonia里面的一些基本DAO有如下：
 - AMAX代币DAO：AMAX的发行和分配、机制；
 - 万物挖矿：包括各项新的矿池的开设和关闭、激励来源和执行；
   
-## 技术路线图
+## Technology roadmap
 
 基本技术路线图如下：
 - v1.0：实现多链系统的母链和第一条EVM子链的搭建和部署，母链实现APOS共识机制，双向跨链实现；
@@ -310,7 +310,7 @@ Armonia里面的一些基本DAO有如下：
 
 在实现v3.0之后的技术路线图，必将由`developer dao`来全面驱动和治理实现完成。
 
-## 参考和引用
+## Reference
 - metaverse: https://theconversation.com/the-metaverse-is-money-and-crypto-is-king-why-youll-be-on-a-blockchain-when-youre-virtual-world-hopping-171659
 - DPOS: https://steemit.com/dpos/@dantheman/dpos-consensus-algorithm-this-missing-white-paper
 - aBFT: https://hedera.com/learning/what-is-asynchronous-byzantine-fault-tolerance-abft
