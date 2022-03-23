@@ -24,7 +24,7 @@
   - [技术路线图](#技术路线图)
   - [参考和引用](#参考和引用)
 ## Introduction
-Looking back the development history of blockchain technology, starting with distributed ledger, till smart contract technlogy that supports all sorts of application logic, towards supplying layer-0 SDK technology for quickly building brand new blockchains, and building layer-2 to solve problems that couldn't be solved in layer-1 technoloy, as well as bi-directional cross-chain technology, one can easily find that blockchain is becoming more sophisticated in order to fufill growing needs of decentraliazed applications.
+Looking back at the development history of blockchain technology, starting with distributed ledger, to smart contract technlogy that supports all sorts of application logic, and onto providing layer-0 & lay-1 SDK technology for quickly building brand new blockchains, and building layer-2 to solve problems that couldn't be solved in layer-1 technoloy, as well as bi-directional cross-chain technology, one can easily find that blockchain is becoming more sophisticated in order to fufill growing needs of decentraliazed applications.
 
 However, as of today, other than promoting security, reliability and decentralization, there hasn't been a single blockchain technology that can sufficiently meet the following requirements:
 - massively parallel processing
