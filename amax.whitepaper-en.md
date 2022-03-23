@@ -1,6 +1,6 @@
 # Armonia multichain blockchain platform
 
-> supporting a platform of one mother chain and multi-child chains
+> Building a platform of one mother-chain and multi-child chains
 `v0.5`
 
 - [Armonia multichain blockchain platform](#armonia-multichain-blockchain-platform)
