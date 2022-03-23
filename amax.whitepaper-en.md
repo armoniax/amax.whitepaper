@@ -31,7 +31,7 @@ However, as of today, other than promoting security, reliability and decentraliz
 - modularized and extensible
 - customizable and configurable
   
-Armonia's founding team believes it takes a multichain blockchain platform technology to achieve the above objectives, which thence can service every individual and business user from all around the world.，从而可以服务于全世界的每一位区块链爱好者和商业机构。It's also under Armonia's founding team's belief that the to-be-built metaverse 核心团队也认为未来的元宇宙世界必定是一个去中心化的、开放式的多链森林体系，其中承载了用户、资产和交易等核心数据和基于智能合约的各类核心应用。
+Armonia's founding team believes it takes a multichain blockchain platform technology to achieve the above objectives, which thence can service every individual and business user from all around the world. It is also under Armonia's founding team's belief that the to-be-built metaverse will be a truly decentralized, open and multi-chain universe which harbors users, assets and transactions and smart-contract based etc mission critical DApps.
 
 ## Objecives & Principles
 Armonia is a mother-and-children multichain blockchain platform, wherein there's Armonia Mother Chain (`AMC`) and many either homogeneous or heterogeneous Armonia Child Chains (`ACC`) that all can operate indepdently. Armonia Mother Chain is designed to be the most secure, highly performant but requiring very low to zero transaction fees. It also supports inter-blockchain brdiging for assets to be mirrowed from one to another in order to support numerous DAPPs to be built on top the platform. Under a multichain architecture, Armonia is poised to support at least one billion users worldwide.
@@ -62,17 +62,17 @@ Armonia as a multichain platform has adopted a unique mother-children-chain mode
   
 ### Multichain model
 
-对于采用多链平台提供的L0 SDK构建而成的子链，可以有定制化的共识模块，包括出块速度，最终确定性机制，虚拟机类型和账户地址类型等的差异。这种多样性，可定制性，可以极大的满足生态内的建设领域需求。
+With Armonia's layer-0 and layer-1 template software and SDK, one can rapidly build many versatile child chains that can have their uniqueness in consensus algorithm, block interval, virtual machine and finality choices...etc, so that they can meet various needs from the ecosystem.
 
-这类子链可以发行和拥有自己的原生代币，也可以直接采用母链的原生代币。比如说有一条子链采用了gas模型，它的gas支付可以来自于母链跨链而来的`$AMAX`原生代币。在这种情况下，子链对`$AMAX`的消耗也就增加了对母链原生代币的需求，因此可以为母链原生代币进行价值赋能。
+Armonia Child Chain or `ACC` can have their own native tokens or directly utilize `AMAX` which can be bridged from `AMC` chain. It is highly encouraged to implement `ACC` that runs on a gas model and utilizes `AMAX` for gas or transaction fees payment. In this way, all `ACC` chains will help to add values to `AMC` and thus the entire ecosystem.
 
-我们把每一条单链高度抽象为字母T：其中横线代表区块链上交易和块数据，竖线代表了在某个高度上的区块链状态数据库（比如说账户余额状态）同时把开放式的公链单链用虚线包围起来，表示一个开放但是单独的网络环境。把私有链通过实线包围起来，代表一个相对封闭的网络环境。其中母链可以为所有子链的生成和信任锚定基础，以及资产交易交换的平台。整体多链系统构成了如下的区块链森林体系：
+Basically every single blockchain can be highly abstracted or characterized as a capital letter T: the horizontal line stands for all transaction and block data which will be broadcasted throughout the network; the vertical line by contrast represents the state database (which includes account balance state) that will be only constructed after execution of transactions produced from the horizontal line. Further more, dotted line circle is to represent an open and public blockchain network while solid line circle is for private blockchains）`AMC` can serve as trust anchor to all other `ACC` chains which altogehter form the following multichain universe：
 
 <img src="./assets/Armonia-Multichain-Forest.png" title="Armonia多链森林体系" width=800 />
 
 ### Multichain layered architecture
 
-如下图所示，在Armonia多链体系下面将出现以下的多链分层架构：
+AS illustrated below, Armonia multichain system can be layered as follows:
 <img src="./assets/multichain-layered-arch.png" width=800 />
 
 也就是说，Aromina将提供L0-base，作为L0层的通用交易路由模块。这样所有的单链的运行节点软件可以侦听同一的网络端口，但是又根据交易含有的目标路由信息来进行是否提交到更上层处理。可以在Armonia多链里面实现万链互通。
