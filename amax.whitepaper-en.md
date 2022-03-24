@@ -35,7 +35,7 @@ However, as of today, other than promoting security, reliability and decentraliz
 Armonia's founding team believes it takes a multichain blockchain platform technology to achieve the above objectives, which thence can service every individual and business user from all around the world. It is also under Armonia's founding team's belief that the to-be-built metaverse will be a truly decentralized, open and multi-chain universe which harbors users, assets and transactions and smart-contract based etc mission critical DApps.
 
 ## Objecives & Principles
-Armonia is a mother-and-children multichain blockchain platform, wherein there's Armonia Meta Chain o (`AMC`) which is the mother chain and many either homogeneous or heterogeneous Armonia Child Chains (`ACC`) that all can operate indepdently. Armonia Meta Chain is designed to be the most secure, highly performant but requiring very low to zero transaction fees. It also supports inter-blockchain brdiging for assets to be mirrowed from one to another in order to support numerous DAPPs to be built on top the platform. Under a multichain architecture, Armonia is poised to support at least one billion users worldwide.
+Armonia is a mother-and-children multichain blockchain platform, wherein there's Armonia Meta Chain o (`AMC`) which is the mother chain to to all other soverign Armonia Child Chains (`ACC`). Armonia Meta Chain is designed to be the most secure, highly performant but requiring very low to zero transaction fees. It also supports inter-blockchain brdiging for assets to be mirrowed from one to another in order to support numerous DAPPs to be built on top the platform. Under a multichain architecture, Armonia is poised to support at least one billion users worldwide.
 
 **Core objectives**:
 - To build a unified account and transaction addressing/routing system for the entire Armoina multichain universe
@@ -185,31 +185,34 @@ In order to embrace the biggest crypto ecosystem in the current world, Armonia's
 
 ### Cross-chain mechanism
 
-在一个多链的生态体系里面，可以让链上发行的资产从原链映射到另外一条链或者反之是至关重要的。某种意义上讲，跨链增加了链上资产的流动性和可用性。同时，将一个资产从原链跨到另外一条链，也可以自由跨链回来，可以满足资产用户的在区块链生态内的全部需求。
+In Armonia's multichain universe, the ability of "moving" an asset from one chain to another can be critical for many users or asset owners. If the originating asset resides in its home chain whereby the assets are issued from, "moving" the asset means locking an asset in the oringating chain and minting the assets from the destination chain and trasferring the assets to the desginated account. But if the orignating asset resides in non-native chain, "moving" the asset means destroying or burning the asset from the originating chain and unlocking the asset and sending back to the designated account from the home chain to the asset. This two-way moving activities that happen between either two chains within Armonia's multichain universe are so-called cross-chain transactions. 
 
-但是要做到以上的双向、可靠、高效的跨链，需要解决跨链过程中涉及到的各类问题：
-- 如何保障链上资产转移交易的最终确定性
-- 如何把一条链的交易信息及时同步到另外一条链上去
-- 如何确保跨链中各项交易执行内容的准确性和有效性
-- 如何避免恶意用户利用跨链盗走资产
-- 如何防止在映射的链上面的映射资产被恶意滥发并使用
+Through cross-chain tranasctions, asset owner can move asset from one chain to another, which greatly increase the liqudity and usability of the asset. Meanwhile, it can suffice all kinds of application scenarios that are happening in the entire ecosystem.
+
+However, following problems must be solved in order to achieve bi-directionary, reliable and efficient cross-chain transactions:
+- how to ensure the asset moving transaction finality onchain?
+- how to synchronize the asset moving result from one chain to another?
+- how to ensure transactions invovled in cross-chain workflow are effective and accurate?
+- how to prevent malicous users from stealing away the asset during the cross-chain transactions?
+- how to prevent the mirroring asset from being overly inflated?
   
-同时还需要考虑的问题有：如何实现一种通用性的跨链解决方案，可以满足各种链之间的跨链需求，而不是为不同链定制不同跨链方案。
+At the same time, one important question that remains to be answered is:
+How to come up a simple-to-use and unified cross-chain solution that can work with all kinds of blockchain in Armmonia's multichain universe?
 
-Armonia核心团队基于以上问题，提出了一种混合治理模型的且相对安全可靠的通用型跨链解决方案，具体如下：
+By addressing the above problems，one hybrid and reliable cross-chain solution has been proposed as follows:
 
-说明：
-| 名称 | 代号 | 
+Legend:
+| Item | Symbol | 
 | ---- | ---- |
-| Armonia母链 | `M` |
-| 跨链资产所在原链 | `A` |
-| 跨链资产映射目标链 | `B` |
-| 跨链用户 | `BU` |
-| 跨链服务商 | `BO` |
-| 跨链目标资产 | `AS` |
-| 跨链目标资产在目标链的治理组织 | `DAO` |
+| Armonia Meta Chain | `M` |
+| Asset originating chain | `A` |
+| Asset destination chain | `B` |
+| cross-chain user | `BU` |
+| cross-chain operator | `BO` |
+| cross-chain asset | `AS` |
+| DAO for asset-mirrored chain | `DAO` |
 
-资产在A链上的分配已经由A链的共识机制、通证经济和生态发展决定了，跨链的资产在目标链B上面需要有相应的ERC20合约来承载，提供铸币、发行、转账和销毁等功能，并且这些功能由DAO来决定。
+Note: Distribution of assets from `A` chain has been determined by its consenus mechanism, tokenomics and ecosystem. Howver, asset to be mirrored to its destination chain `B` must be managed within a `ERC20` token contract for its issue, mint, transfer and burn etc activities and these will be governed by its `DAO` body.
 
 * 准备工作
 1. 在M链上提供系统合约作为跨链的基础合约`amax.xswap`，记录和管控跨链同类资产兑换的全部过程；
