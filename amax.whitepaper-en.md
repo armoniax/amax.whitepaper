@@ -11,6 +11,7 @@
     - [Multichain layered architecture](#multichain-layered-architecture)
     - [Multichain transaction routing](#multichain-transaction-routing)
     - [Multichain enabled applicaiton scenariors](#multichain-enabled-applicaiton-scenariors)
+    - [Cross-chain in Armonia's multichain universe](#cross-chain-in-armonias-multichain-universe)
     - [Armonia mother chain profile](#armonia-mother-chain-profile)
     - [Armonia mother chain consensus algorithm](#armonia-mother-chain-consensus-algorithm)
     - [Armonia-mother-chain accounts](#armonia-mother-chain-accounts)
@@ -97,15 +98,16 @@ In Armonia's multichain empowered ecosystem, numerous application scenarios can 
 - create one or multiple prediction `ACC` chains to achieve both performance and privacy;
 - create one or mulitple GameFi, NFT and metaverse application chains;
 
-有了多链并存，子母链之间的交互，还有和现有第三方公链之间的交互，Armonia致力建设如下的通用跨链能力：
+### Cross-chain in Armonia's multichain universe
 
-<img src="./assets/armonia-multichain-scope.png" title="Armonia多链和全网区块链关系" width=800 />
+With multiple chains co-existing in Armonia's multichain universe, there will be interaction i.e. cross-chain activities between `AMC` and `ACC` chains as well other public chains like bitcoin and ethereume. Armonia endeavors to build following cross-chain capability for blockchain users:
 
+<img src="./assets/armonia-multichain-scope.png" title="Armonia multichain and cross-chain relationship" width=800 />
 
 
 ### Armonia mother chain profile
 
-| 特征 | 说明 | 备注 |
+| Feature | Description | Memo |
 |---|---|---|
 | 原生代币符号 | `AMAX` | 由系统合约 **amax.token** 发行 |
 | AMAX的精度 | 8 | 最小可分割为亿分之一|
