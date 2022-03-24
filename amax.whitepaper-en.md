@@ -73,7 +73,7 @@ Basically every single blockchain can be highly abstracted or characterized as a
 
 ### Multichain layered architecture
 
-AS illustrated below, Armonia multichain system can be layered as follows:
+Armonia multichain system can be layered as follows:
 <img src="./assets/multichain-layered-arch.png" width=800 />
 
 In this design, Armonia will provide layer-0 base component to service the transcation routing capability, which means all node software can listen to a common network port for various single chains but the transcation routing component will determine whether or not the arriving transactions will be further processed in the upper layer of the node software. Through this destination chain filtering process, transactions can have one-to-one, one-to-many and one-to-all modes of accessbility to all chains within Armonia network.
@@ -201,7 +201,7 @@ How to come up a simple-to-use and unified cross-chain solution that can work wi
 
 By addressing the above problems，one hybrid and reliable cross-chain solution has been proposed as follows:
 
-Legend:
+**Legend**:
 | Item | Symbol | 
 | ---- | ---- |
 | Armonia Meta Chain | `M` |
