@@ -128,17 +128,21 @@ As the founding chain in Armonia's multichain network, `AMC` serves as the trust
 
 Armonia has invented a new consensus algorithm which is named as Armonia DPOS or short as APOS for `AMC` chain, the mother chain and the other child chains can adopt their own consensus algorithm to secure their network.
 
-APOS共识机制的核心框架如下：
-1. 全网参与挖矿的节点分成主节点和备节点，分别挖出主块和备块；
-2. 主备节点经过开放式的不间断的全网投票选举出来，其中按照节点所质押加上获得所有投票的总量排名的前21名为主节点，而后面的10000名为备节点；另外通过母链的DAO组织可以对主备节点的个数进行治理调整；其余的节点只做同步不参与出块，称为观察节点；
-3. 主节点间按照DPOS+VRF的方式轮流负责挖出主块，并获得相应增发收益；
-4. 备选节点也通过VRF的算法来确定在每个出块的时间槽内挖出备块，并获得相应增发收益；
-5. 而主节点在验证好备块后可以加入到主块的备块列表里面，并且获得相应的收益；如果主节点加错备块则挖出的主块也会变得无效而不为接受；如果主节点没有挖出主块，但是该时间槽位内的备块就转成主块，相应挖出备块的节点获得主块收益；
-6. 主块的最终确定性算法采用`aBFT`，而备块通过主块来获得最终确定性；
-7. 主块必须验证加执行来更新本地状态库；备块则只需验证不可真正执行，以免交易被重复执行，导致双花现象；
-8. 备块收益所得按照和同高度的主块内的交易重复比例来分配，也就是说备块如果拥有主块的所有交易所，将要获得全部的备块收益。
+The constructs of APOS is as follows:
+1. All network nodes that run `AMC` node software can participate in block production for both main and vice blocks that form `AMC` main and backup chain(s);
+2. Those nodes that are elected through a non-stop voting process and ranked top `21` in the list become the mainnode and the rest `10,000` nodes are the backup nodes; 
+3. The voting process requires the candidate nodes to stake a certain amount of `AMAX` tokens in order to receive votes from the Armonia community; 
+4. The other nodes neither in the main nor backup node list are called observer nodes;
+5. The main nodes take turns according to VRF algorithm to produce the main blocks and receive newly inflated `AMAX` tokens;
+6. The backup nodes also take turns accoring to VRF algorithm but are applied in a much larger quorum (10,0000 nodes for one backup chain) and each backup block mined will reward the miner a certain amount of `AMAX` tokens; the backup block must refer to the latest main block being produced by the main node.
+7. The main nodes shall include backup blocks during generating a main block and will be rewarded for correctly including a good bakup block;
+8. When a bad backup block is included into the main block, it will not be accepted by the whole network and thus discarded by other nodes;
+9. When a main blocked is missed or faulty, the backup block will repace the main block to become the actual main block and the producer node thus receives main block reward;
+10. The finality of main blocks is determined through implementation of `aBFT` algorithm. However the finality of backup blocks are determined by the main blocks;
+11. Transactions with main blocks must be not only verified but also executed to update the corresponding global state for the network; However, the backup blocks are only required to be verified in order to be accepted by the whole network. This way it avoids the double-spending problem and allows for the nodes to conduct parallel processing for both main and backup blocks;
+12. To prevent those greedy but lazy nodes from cheating the network by producting empty or useless blocks that include useless fabricated transactions, the reward to the backup nodes for producing backup blocks will be corresponding to the simliarity of block transactions compared to those in the main blocks at the same height. Therefore, it also means the reward will be only calculated and settled in the next block height;
 
-以下为一主一备双链交织模型下的一些运行场景展示：
+The interwoven main and backup `AMC` chains can have following block generation scenariors:
 
 - 主节点和备节点出块和主块与备块之间关系如下：
 <img src="./assets/apos-normal.png" width=800 />
@@ -316,5 +320,6 @@ Technology roadmap:
 - metaverse: https://theconversation.com/the-metaverse-is-money-and-crypto-is-king-why-youll-be-on-a-blockchain-when-youre-virtual-world-hopping-171659
 - DPOS: https://steemit.com/dpos/@dantheman/dpos-consensus-algorithm-this-missing-white-paper
 - aBFT: https://hedera.com/learning/what-is-asynchronous-byzantine-fault-tolerance-abft
+- VRF: https://en.wikipedia.org/wiki/Verifiable_random_function
 - DAO: https://consensys.net/blog/blockchain-explained/what-is-a-dao-and-how-do-they-work/
 - finality：https://academy.binance.com/en/glossary/finality
