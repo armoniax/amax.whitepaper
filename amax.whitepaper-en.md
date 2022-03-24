@@ -68,16 +68,16 @@ Armonia Child Chain or `ACC` can have their own native tokens or directly utiliz
 
 Basically every single blockchain can be highly abstracted or characterized as a capital letter T: the horizontal line stands for all transaction and block data which will be broadcasted throughout the network; the vertical line by contrast represents the state database (which includes account balance state) that will be only constructed after execution of transactions produced from the horizontal line. Further more, dotted line circle is to represent an open and public blockchain network while solid line circle is for private blockchains）`AMC` can serve as trust anchor to all other `ACC` chains which altogehter form the following multichain universe：
 
-<img src="./assets/Armonia-Multichain-Forest.png" title="Armonia多链森林体系" width=800 />
+<img src="./assets/Armonia-Multichain-Forest.png" title="Armonia Multichain Universe" width=800 />
 
 ### Multichain layered architecture
 
 AS illustrated below, Armonia multichain system can be layered as follows:
 <img src="./assets/multichain-layered-arch.png" width=800 />
 
-也就是说，Aromina将提供L0-base，作为L0层的通用交易路由模块。这样所有的单链的运行节点软件可以侦听同一的网络端口，但是又根据交易含有的目标路由信息来进行是否提交到更上层处理。可以在Armonia多链里面实现万链互通。
+In this design, Armonia will provide layer-0 base component to service the transcation routing capability, which means all node software can listen to a common network port for various single chains but the transcation routing component will determine whether or not the arriving transactions will be further processed in the upper layer of the node software. Through this destination chain filtering process, transactions can have one-to-one, one-to-many and one-to-all modes of accessbility to all chains within Armonia network.
 
-在多链分层架构下，Armonia会提供L0-base, L0, L1的模板软件和相应SDK，允许生态区块链建方可以自由选择模块、配置好参数，最后快速搭建一个个性化的单链，并且可以和生态内的各个子链和母链之间可自由交互。
+Furthermore, Armonia will also provide layer-0, layer-1 template components and their corresponding SDK such that ecosystem developers can quickly implement a blockchain system by choosing the ready blockchain building blocks with personalized configurations for each chain. In so doing, all child chains can easily interact with each other.
 
 ### Multichain transaction routing
 
