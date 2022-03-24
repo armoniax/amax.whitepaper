@@ -12,8 +12,8 @@
     - [Multichain transaction routing](#multichain-transaction-routing)
     - [Multichain enabled applicaiton scenariors](#multichain-enabled-applicaiton-scenariors)
     - [Cross-chain in Armonia's multichain universe](#cross-chain-in-armonias-multichain-universe)
-    - [Armonia mother chain profile](#armonia-mother-chain-profile)
-    - [Armonia mother chain consensus algorithm](#armonia-mother-chain-consensus-algorithm)
+    - [Armonia Meta Chain profile](#armonia-meta-chain-profile)
+    - [Armonia meta chain consensus algorithm](#armonia-meta-chain-consensus-algorithm)
     - [Armonia-mother-chain accounts](#armonia-mother-chain-accounts)
     - [First Armonia-child-chain](#first-armonia-child-chain)
     - [Cross-chain mechanism](#cross-chain-mechanism)
@@ -25,7 +25,7 @@
   - [Technology roadmap](#technology-roadmap)
   - [Reference](#reference)
 ## Introduction
-Looking back at the development history of blockchain technology, starting with distributed ledger, to smart contract technlogy that supports all sorts of application logic, and onto providing layer-0 & lay-1 SDK technology for quickly building brand new blockchains, and building layer-2 to solve problems that couldn't be solved in layer-1 technoloy, as well as bi-directional cross-chain technology, one can easily find that blockchain is becoming more sophisticated in order to fufill growing needs of decentraliazed applications.
+Looking back at the development history of blockchain technology, starting with distributed ledger, to smart contract technlogy that supports all sorts of application logic, and onto providing layer-0 & layer-1 SDK technology for quickly building brand new blockchains, and building layer-2 to solve problems that couldn't be solved in layer-1 technoloy, as well as bi-directional cross-chain technology, one can easily come to a conclusion that blockchain is becoming more sophisticated in order to fufill growing needs of decentraliazed applications aspired by blockchain users.
 
 However, as of today, other than promoting security, reliability and decentralization, there hasn't been a single blockchain technology that can sufficiently meet the following requirements:
 - massively parallel processing
@@ -35,7 +35,7 @@ However, as of today, other than promoting security, reliability and decentraliz
 Armonia's founding team believes it takes a multichain blockchain platform technology to achieve the above objectives, which thence can service every individual and business user from all around the world. It is also under Armonia's founding team's belief that the to-be-built metaverse will be a truly decentralized, open and multi-chain universe which harbors users, assets and transactions and smart-contract based etc mission critical DApps.
 
 ## Objecives & Principles
-Armonia is a mother-and-children multichain blockchain platform, wherein there's Armonia Mother Chain (`AMC`) and many either homogeneous or heterogeneous Armonia Child Chains (`ACC`) that all can operate indepdently. Armonia Mother Chain is designed to be the most secure, highly performant but requiring very low to zero transaction fees. It also supports inter-blockchain brdiging for assets to be mirrowed from one to another in order to support numerous DAPPs to be built on top the platform. Under a multichain architecture, Armonia is poised to support at least one billion users worldwide.
+Armonia is a mother-and-children multichain blockchain platform, wherein there's Armonia Meta Chain o (`AMC`) which is the mother chain and many either homogeneous or heterogeneous Armonia Child Chains (`ACC`) that all can operate indepdently. Armonia Meta Chain is designed to be the most secure, highly performant but requiring very low to zero transaction fees. It also supports inter-blockchain brdiging for assets to be mirrowed from one to another in order to support numerous DAPPs to be built on top the platform. Under a multichain architecture, Armonia is poised to support at least one billion users worldwide.
 
 **Core objectives**:
 - To build a unified account and transaction addressing/routing system for the entire Armoina multichain universe
@@ -105,11 +105,11 @@ With multiple chains co-existing in Armonia's multichain universe, there will be
 <img src="./assets/armonia-multichain-scope.png" title="Armonia multichain and cross-chain relationship" width=800 />
 
 
-### Armonia mother chain profile
+### Armonia Meta Chain profile
 
 | Feature | Description | Memo |
 |---|---|---|
-| Native token | `AMAX` | issued in system contract**amax.token** |
+| Native token | `AMAX` | issued in system contract: **amax.token** |
 | Precision | 8 | small unit will be 1 of 100 million |
 | Total supply | 1,000,000,000 | Inflate/deflate via DAO to support ecossytem advancement |
 | Consenus algorithm | APOS | Armonia's DPOS |
@@ -118,15 +118,15 @@ With multiple chains co-existing in Armonia's multichain universe, there will be
 | Block interval | 1 sec | a fine choice between stability and transaction onchain speed |
 | TPS | 5000+ | benchmarked with transfer transaction, `v1.0` |
 
-### Armonia mother chain consensus algorithm
+### Armonia meta chain consensus algorithm
 
-作为多链森林体系的创始母链，担当了所有其它子链的信任基石和底层价值通证来源。也就是说所有子链的原生代币必须来自于母链，用于子链的基础运作所需（例如交易燃料费使用）。因此确保母链的安全性和稳定性尤为重要。而区块链的安全性主要体现在足够的去中心化程度和抗审查能力，这在技术的实现上需要做到以下几点：
+As the founding chain in Armonia's multichain network, `AMC` serves as the trust anchor and value engine to all other spawned child chains. For those who adopt `$AMAX` as the native token of their own chains for basic functions like transaction fees. Hence, it is crticial to ensure the security and reliability of Armonia meta chain. It means there should be a sufficient level of decentralization and anti-censoship capability as described as follows:
 
-1. 有足够多的节点运行区块链的数据，这样部分甚至全部的核心记账节点如果受到攻击，全网仍然可以及时恢复运行；
-2. 如果其中有运行记账和验证的节点作恶，只要是作恶节点数量小于记账节点总数的1/3，可以被全网节点及时发现并纠正；
-3. 在记账节点不工作的时候，可以被及时替代出去；
+1. There should be enough copies of blockchain data maintained by mining nodes such that even if there were direct attacks to the mining nodes the network can still survive and operate and eventually return to a good working state;
+2. When there were vicious nodes trying to sabotage the network, the activities can be discovered and even corrected as long as the total number of bad actors are below 1/3 of the total set of validators;
+3. Those mining nodes can be replaced by standby nodes when they are not on their duty.
 
-Armonia核心团队针对以上建设目标，对母链采用了一种全新的区块链共识机制：APOS(Armonia DPOS) 是对DPoS的一种升级版，而其它子链可以采用独立的共识机制运行来维护自己的网络数据。
+Armonia has invented a new consensus algorithm which is named as Armonia DPOS or short as APOS for `AMC` chain, the mother chain and the other child chains can adopt their own consensus algorithm to secure their network.
 
 APOS共识机制的核心框架如下：
 1. 全网参与挖矿的节点分成主节点和备节点，分别挖出主块和备块；
@@ -305,10 +305,10 @@ Armonia里面的一些基本DAO有如下：
   
 ## Technology roadmap
 
-基本技术路线图如下：
-- v1.0：实现多链系统的母链和第一条EVM子链的搭建和部署，母链实现APOS共识机制，双向跨链实现；
-- v2.0：实现生态内开放式的web3资源共享挖矿机制和相应web3的访问技术对接；
-- v3.0：实现多链的L0-base，L0, L1的模块化和模板化SDK，可以快速搭建生态内各类单链；
+Technology roadmap:
+- v1.0：实现多链系统的母链和第一条EVM子链的搭建和部署，母链实现APOS共识机制，双向跨链实现;
+- v2.0：实现生态内开放式的web3资源共享挖矿机制和相应web3的访问技术对接;
+- v3.0：实现多链的L0-base，L0, L1的模块化和模板化SDK，可以快速搭建生态内各类单链.
 
 在实现v3.0之后的技术路线图，必将由`developer dao`来全面驱动和治理实现完成。
 
