@@ -89,13 +89,13 @@ That means, one user can intiate a blockchain transaction that can reach one sin
 <img src="./assets/tx_multichain_network.png" width=800 />
 
 ### Multichain enabled applicaiton scenariors
-在多链生态体系中，可以建设包括且不限制为以下的应用场景：
-- 通过母链实现生态内各类资产的发行、转移和交易、快速兑换;
-- 在母链提供生态建设的各类激励矿池；
-- 母链的账户支持KYC/KYB验证标签，从而支持在有监管需求的上层应用；
-- 在某条子链实现基于订单簿的高性能、低延时的去中心化交易所；
-- 在某条子链实现竞猜类应用的高性能平台；
-- 在某条子链提供各类链游、NFT和元宇宙等落地场景。
+In Armonia's multichain empowered ecosystem, numerous application scenarios can be built including the following:
+- issue, mint, transfer and exchange all sorts of crypto assets in `AMC` chain;
+- build incentive mining pools in `AMC` to promote Armonia ecosystem development;
+- complete KYC/KYB for `AMC` accounts in order to access those smart contracts that have regulation compilance requirements;
+- create one or mulitple DEX `ACC` chains to support order-book based exchange with high-performance and low-laytency capabilities;
+- create one or multiple prediction `ACC` chains to achieve both performance and privacy;
+- create one or mulitple GameFi, NFT and metaverse application chains;
 
 有了多链并存，子母链之间的交互，还有和现有第三方公链之间的交互，Armonia致力建设如下的通用跨链能力：
 
