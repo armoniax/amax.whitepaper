@@ -81,10 +81,10 @@ Furthermore, Armonia will also provide layer-0, layer-1 template components and 
 
 ### Multichain transaction routing
 
-L0-base作为基础层的共用模块，里面可以提供单播、组播、和广播的三种模式的多链体系覆盖模式：
+As the common building block for layer-0 in Armonia SDK, it serves to support three types of transaction routing in Armonia multichain system: 1) unicast; 2) groupcast; 3) broadcast:
 <img src="./assets/tx_multichain_comm.png" width=800 />
 
-这种方式下面，用户端可以发起需要触达到某一条链，或者一组多链，或者是所有链的交易，而每个多链体系下的节点通过L0-base的实现来相应提交到更上层处理，并且决定是否转发到整个网络里面去。但是如果交易可以提升到节点软件的上层模块，由于缺乏在所在链的交易所需手续因素，交易将无法执行而无法上链。
+That means, one user can intiate a blockchain transaction that can reach one single chain or a group of prescribed chains or even to every chain within Armonia multichain network. That may be helpful or even critical in a coordinated operation in the multichain network. But of course when there is any chain-level issue like lack of gas fees that could still cause the transaction execution failure, which could create an inconsistent behavior for various chains being targeted by the transaction and this problem has to be addressed rather at the application level.
 
 <img src="./assets/tx_multichain_network.png" width=800 />
 
