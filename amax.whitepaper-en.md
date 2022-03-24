@@ -109,14 +109,14 @@ With multiple chains co-existing in Armonia's multichain universe, there will be
 
 | Feature | Description | Memo |
 |---|---|---|
-| 原生代币符号 | `AMAX` | 由系统合约 **amax.token** 发行 |
-| AMAX的精度 | 8 | 最小可分割为亿分之一|
-| 设计总量 | 1,000,000,000 | DAO治理管控未来增发，有生态销毁机制 |
-| 共识机制 | APOS | Armonia特有共识机制 |
-| 虚拟机 | WASM | 高性能虚拟机 |
-| 防女巫攻击 | 资源质押和租用模型，需要`$AMAX`| 交易零Gas费 | 
-| 出块速度 | 1 秒 | |
-| TPS | 5000+ | 基准测试为转账交易，`v1.0`即实现目标 |
+| Native token | `AMAX` | issued in system contract**amax.token** |
+| Precision | 8 | small unit will be 1 of 100 million |
+| Total supply | 1,000,000,000 | Inflate/deflate via DAO to support ecossytem advancement |
+| Consenus algorithm | APOS | Armonia's DPOS |
+| Virtual machine | WASM | High-performing VM |
+| anti-sybil attack | resource staking and leasing model with `$AMAX`| zero gas fees | 
+| Block interval | 1 sec | a fine choice between stability and transaction onchain speed |
+| TPS | 5000+ | benchmarked with transfer transaction, `v1.0` |
 
 ### Armonia mother chain consensus algorithm
 
