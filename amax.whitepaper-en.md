@@ -156,11 +156,14 @@ The interwoven main and backup `AMC` chains can have following block generation 
 - If the on-duty main node couldn't produce the block of a timeslot, the next (`n+1`) main block will take the current backup block as the main block and its producing node will be rewarded with main block reward amount. However the prior (`n'-1`) backup block will be thus not rewarded as no main block is including it:
 <img src="./assets/apos_mainnode_fail.png" width=800>
 
+To summarize, for `AMC` chain, it can be composed of one main chain and one to several backup chains that involves in total `21 + 10,000 * n` number of mining nodes. Unlike a pure DPOS consensus algorithm that rewards cadidate nodes not even running the node software, APOS only rewards those that run the node software, synchronize with the network and actually produce either main or backup blocks. This way, it greatly improves the overall security of `AMC` chain.
 
-一主一备的双链架构下可以支持到10021个节点参与共同挖矿，维护网络健壮性和安全性，同时获得相应收益。为了进一步增加参与节点的数量，可以把一主一备双链变成一主双备甚至一主三备份这样的多链模型。每增加一条备链可以增加10000个备链挖矿节点。虽然单个备节点获得挖矿的数量少了，但是因为大大提升了网络的安全性，增强了社群的参与度和社群共识，随着币值相应上涨，单个备节点的收益反而可以保持或者进一步上涨。通过这种模型可以来激励更多的社群参与者来挖矿和建设整体网络。至于备份子链的冗余个数可以由Aarmonia的`DAO`组织来管理和决定。相应地，主备子链组合的可扩展场景如下所示：
+With more backup nodes to participate, even though each backup node might get lesser chance to mine a block and thus mine less `AMAX`, the overall network security and  and community consensus are enhanced, which would evently contribute to `AMAX` token value. This would thus encourage more to particate and further increase the awareness of the project. As for the number of backup chains, it can be desided through DAO governance body.
+
+Following diagram demonstrate what `AMC` shall look like with the number of backup chains increases:
 <img src="./assets/apos_main_vice_subchains.png" width=800 />
 
-另外考虑到自创世开始的第一年内，Armonia母链主要是核心团队在维护和开发，并不会立即对外开放投票，所以在第一年内即使维护和运行了21个超级节点，每一个挖出的块并没有任何增发奖励。在第二年随着节点投票的开始，新的节点引入之后，在满足一定的质押比例后（比如5%），每挖出的块都会有增发奖励给到该记账节点。
+Last but not least, voting for mining node election will not start within the first year since its inception as `AMC` chain will be under fast-pace development and upgrade mode. Therefore the orignal 21 main nodes will not yield any new `AMAX` token upon each block production. The voting is expected to be open to the general public after passing `v1.0` milestone and new tokens will only be newly mined/inflated after all staked and voted `AMAX` tokens are more than 5% of the total supply.
 
 ### Armonia-mother-chain accounts
 
