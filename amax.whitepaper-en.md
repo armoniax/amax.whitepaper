@@ -14,7 +14,7 @@
     - [Cross-chain in Armonia's multichain universe](#cross-chain-in-armonias-multichain-universe)
     - [Armonia Meta Chain profile](#armonia-meta-chain-profile)
     - [Armonia meta chain consensus algorithm](#armonia-meta-chain-consensus-algorithm)
-    - [Armonia-mother-chain accounts](#armonia-mother-chain-accounts)
+    - [Armonia meta chain accounts](#armonia-meta-chain-accounts)
     - [First Armonia-child-chain](#first-armonia-child-chain)
     - [Cross-chain mechanism](#cross-chain-mechanism)
   - [Tokenomics](#tokenomics)
@@ -158,14 +158,14 @@ The interwoven main and backup `AMC` chains can have following block generation 
 
 To summarize, for `AMC` chain, it can be composed of one main chain and one to several backup chains that involves in total `21 + 10,000 * n` number of mining nodes. Unlike a pure DPOS consensus algorithm that rewards cadidate nodes not even running the node software, APOS only rewards those that run the node software, synchronize with the network and actually produce either main or backup blocks. This way, it greatly improves the overall security of `AMC` chain.
 
-With more backup nodes to participate, even though each backup node might get lesser chance to mine a block and thus mine less `AMAX`, the overall network security and  and community consensus are enhanced, which would evently contribute to `AMAX` token value. This would thus encourage more to particate and further increase the awareness of the project. As for the number of backup chains, it can be desided through DAO governance body.
+With more backup nodes to participate, even though each backup node might get lesser chance to mine a block and thus mine lesser `AMAX`, the overall network security and  and community consensus are enhanced, which would eventually contribute to `AMAX` token value. This would thus encourage more to particate and further increase the awareness of the project. As for the number of backup chains, it can be desided through DAO governance body.
 
 Following diagram demonstrate what `AMC` shall look like with the number of backup chains increases:
 <img src="./assets/apos_main_vice_subchains.png" width=800 />
 
 Last but not least, voting for mining node election will not start within the first year since its inception as `AMC` chain will be under fast-pace development and upgrade mode. Therefore the orignal 21 main nodes will not yield any new `AMAX` token upon each block production. The voting is expected to be open to the general public after passing `v1.0` milestone and new tokens will only be newly mined/inflated after all staked and voted `AMAX` tokens are more than 5% of the total supply.
 
-### Armonia-mother-chain accounts
+### Armonia meta chain accounts
 
 有别于其它类似比特币、以太坊公链等采用了地址来标识用户的链上账户（通常由公钥来推导出用户地址）, Armonia母链采用了账户模型，账户绑定了一个或者多个公钥，并且需要用户提前注册好才能使用。Armonia母链规定所有的账户都由一个唯一名称来标识，名称的最大长度为12个字符（[`1-5`,`a-z`,`.`]), 未来可以扩展到24字符([`1-9`,`a-z`,`.`,`#`,`@`])。该名称由帐户的创建者指定。帐户创建者必须使用 `$AMAX`代币预留一定的RAM数值用来存储新帐户，直至新帐户质押自己的代币来预留自己的RAM。
 
