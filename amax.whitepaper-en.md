@@ -110,7 +110,7 @@ With multiple chains co-existing in Armonia's multichain universe, there will be
 | Feature | Description | Memo |
 |---|---|---|
 | Native token | `AMAX` | issued in system contract: **amax.token** |
-| Precision | 8 | small unit will be 1 of 100 million |
+| Precision | 8 | the smallest unit is 1 of 100 million |
 | Total supply | 1,000,000,000 | Inflate/deflate via DAO to support ecossytem advancement |
 | Consenus algorithm | APOS | Armonia's DPOS |
 | Virtual machine | WASM | High-performing VM |
@@ -144,16 +144,16 @@ The constructs of APOS is as follows:
 
 The interwoven main and backup `AMC` chains can have following block generation scenariors:
 
-- 主节点和备节点出块和主块与备块之间关系如下：
+- In general the main and backup blocks are interwoven as following:
 <img src="./assets/apos-normal.png" width=800 />
 
-- 另外，Armonia母链的主节点每次出块6块，再轮流到下一个当选出块主节点，但是从节点在每块都有可能变更。通常出块情况如下：
+- One Armonia main node produces 6 blocks in a row before shifting to other main nodes but backup nodes shift each time after producing only one backup block:
 <img src="./assets/apos-bp-nodes.png" width=800>
 
-- 如果备节点无法按时或者准确出块，那么下一个主块将不能包含上一个时间槽的从块：
+- If the on-duty backup node couldn't produce the block of a timeslot, the next main block won't include the backup block:
 <img src="./assets/apos_vicenode_fail.png" width=800>
 
-- 如果主节点无法按时或者准确出块，那么下一个主块将直接连接有效的备块作为主块，相应备节点获得主块的收益, 但是其中丢失主块包括进来的备块`n'-1`因此而丢失, 无法获得收益：
+- If the on-duty main node couldn't produce the block of a timeslot, the next (`n+1`) main block will take the current backup block as the main block and its producing node will be rewarded with main block reward amount. However the prior (`n'-1`) backup block will be thus not rewarded as no main block is including it:
 <img src="./assets/apos_mainnode_fail.png" width=800>
 
 
