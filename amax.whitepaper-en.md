@@ -167,22 +167,21 @@ Last but not least, voting for mining node election will not start within the fi
 
 ### Armonia meta chain accounts
 
-有别于其它类似比特币、以太坊公链等采用了地址来标识用户的链上账户（通常由公钥来推导出用户地址）, Armonia母链采用了账户模型，账户绑定了一个或者多个公钥，并且需要用户提前注册好才能使用。Armonia母链规定所有的账户都由一个唯一名称来标识，名称的最大长度为12个字符（[`1-5`,`a-z`,`.`]), 未来可以扩展到24字符([`1-9`,`a-z`,`.`,`#`,`@`])。该名称由帐户的创建者指定。帐户创建者必须使用 `$AMAX`代币预留一定的RAM数值用来存储新帐户，直至新帐户质押自己的代币来预留自己的RAM。
-
-在去中心化的背景下，应用程序开发人员在新用户注册时，会象征性地支付账户创建费用。传统企业为获取客户，已经以广告、免费服务等形式为每个用户花费了大量资金。相比之下，创建新的区块链账户所需的资金成本微不足道。不过好在如果用户在注册另一个应用程序时已经创建了帐户，那就没有必要再次创建了。
+Rather than utilize public-key derived address to denote each account, `AMC` adopts account name based account model. One account can be bound with one to multiple public keys and requires its owner to register/activate itself before any transaction could happen with the account. Each account name is composed of 12 alphanumeric characters ([`1-5`,`a-z`,`.`]) and can be extended to support 24 such characters ([`1-9`,`a-z`,`.`,`#`,`@`]) Account owners must stake a certain amount of `$AMAX` tokens for reserving a ccertain amount of system RAM, CPU and network etc resources in order to particate in all kinds of transactions.
 
 
 ### First Armonia-child-chain
-考虑到和世界上目前最流行的以太坊区块链技术的兼容，Armonia的第一条子链采用以太坊的底层核心技术，包括EVM虚拟机和地址模型等，具体特征如下：
-| 特征 | 说明 | 备注 |
+In order to embrace the biggest crypto ecosystem in the current world, Armonia's first child chain will stay 100% comptiable with Ethereum and their cloned chains. Its main features are:
+
+| Feature | Description | Memo |
 |---|---|---|
-| 原生代币符号 | `AMAX` | 由母链跨链而来 |
-| 共识机制 | PoSA |  |
-| 虚拟机 | EVM | 高性能虚拟机 |
-| 防女巫攻击 | 交易需要消耗Gas，即支付`$AMAX` | 根据实际gas数量和价格的乘积来决定 |
-| 账户模型 | 地址模型 | 格式：`0x...` |
-| 出块速度 | 3 秒 | |
-| TPS | 160+ | 基准测试为转账交易，`v1.0`即实现目标 ｜
+| Native token | `AMAX` | bridged from `AMC` chain |
+| Consensus algorithm | PoSA |  |
+| Virtual machine | EVM | support solidity language for its smart contract development |
+| Anti-sybil attack | Gas for transaction fees, paid in `$AMAX` | `Gas fees = Gas amount x Gas price` |
+| Account model | public key derived addresses | Format: `0x...` |
+| Block interval | 3 seconds | |
+| TPS | 160+ | Bechmarked with transfer transactions, `v1.0` ｜
 
 ### Cross-chain mechanism
 
