@@ -190,7 +190,7 @@ In Armonia's multichain universe, the ability of "moving" an asset from one chai
 Through cross-chain tranasctions, asset owner can move asset from one chain to another, which greatly increase the liqudity and usability of the asset. Meanwhile, it can suffice all kinds of application scenarios that are happening in the entire ecosystem.
 
 However, following problems must be solved in order to achieve bi-directionary, reliable and efficient cross-chain transactions:
-- how to ensure the asset moving transaction finality onchain?
+- how to ensure the finality of asset moving transactions onchain?
 - how to synchronize the asset moving result from one chain to another?
 - how to ensure transactions invovled in cross-chain workflow are effective and accurate?
 - how to prevent malicous users from stealing away the asset during the cross-chain transactions?
@@ -214,7 +214,7 @@ Legend:
 
 Note: Distribution of assets from `A` chain has been determined by its consenus mechanism, tokenomics and ecosystem. Howver, asset to be mirrored to its destination chain `B` must be managed within a `ERC20` token contract for its issue, mint, transfer and burn etc activities and these will be governed by its `DAO` body.
 
-* 准备工作
+* Preparation work
 1. 在M链上提供系统合约作为跨链的基础合约`amax.xswap`，记录和管控跨链同类资产兑换的全部过程；
 2. 在A链部署部署合约作为跨链资产的托管合约`as_custody`；
 3. 在B链部署ERC20合约`as_erc20`作为资产接收和销毁功能；同时也有动态铸币功能，铸币权由DAO来管控；
