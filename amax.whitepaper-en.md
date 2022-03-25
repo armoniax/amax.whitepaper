@@ -215,9 +215,9 @@ By addressing the above problems，one hybrid and reliable cross-chain solution 
 Note: Distribution of assets from `A` chain has been determined by its consenus mechanism, tokenomics and ecosystem. Howver, asset to be mirrored to its destination chain `B` must be managed within a `ERC20` token contract for its issue, mint, transfer and burn etc activities and these will be governed by its `DAO` body.
 
 * Preparation work
-1. 在M链上提供系统合约作为跨链的基础合约`amax.xswap`，记录和管控跨链同类资产兑换的全部过程；
-2. 在A链部署部署合约作为跨链资产的托管合约`as_custody`；
-3. 在B链部署ERC20合约`as_erc20`作为资产接收和销毁功能；同时也有动态铸币功能，铸币权由DAO来管控；
+1. Deploy a smart contract `amax.xswap` onto `M` chain for cross-chain management;
+2. Deploy a smart contract `as_custody` onto `A` chain to lock cross-chain assets;
+3. Deploy a smart contract `as_erc20` onto `B` for issuing, minting and destroying mirrored assets, governed by its DAO body.
 
 * 流程如下
 1. BO找到DAO，申请在B链上的跨链资产，比如说100万枚AS；DAO在BO打入100万A链上的资产到`as_custody`,在B链上通过`as_erc20`合约铸币100万AS给BO；
