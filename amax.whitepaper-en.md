@@ -248,7 +248,7 @@ The total supply of `$AMAX` is 1 billion and there's no systematic inflation. Bu
 
 The overall allocation of `$AMAX` tokens are as follows:
 
-<img src="./assets/amax-total-allocation.png" width=800 />
+<img src="./assets/amax-total-allocation_en.png" width=800 />
 
 * Market sales allocation
 Among the total allocation, `$AMAX` tokens to be used in the market sales occupies 15% of the total amount, which will serve the following purposes:
