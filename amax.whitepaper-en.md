@@ -236,25 +236,29 @@ The detailed workflow diagram:
 
 ## Tokenomics
 
-Armonia的母链发行了`$AMAX`的原生代币，不光用于母链的运作所需资产，也可以为子链运行所需，甚至成为它们的原生代币。特别是由Armonia核心团队主导的子链都将采用`$AMAX`作为子链运行所需的原生代币。
+Armonia meta chain has her native token `$AMAX` which is not only a source of power to all activities on `AMC` but can also serve child chains and even become their native token when chosen so by the child chains.
 
-`$AMAX`的设计发行总量最大值为210亿枚，但是第一阶段的设计发行量为10亿枚，并且只有实际可流通市值在100倍增长的前提下，DAO组织才考虑增发的可能性。
+The total supply of `$AMAX` is 1 billion and there's no systematic inflation. But Armonia `DAO` can decide whether to inflate `$AMAX` to make the ecosystem even more successful.
 
 
 ### Token distribution
 
-`$AMAX`的总量分配如下：
+The overall allocation of `$AMAX` tokens are as follows:
+
 <img src="./assets/amax-total-allocation.png" width=800 />
 
-其中, 市场募资使用`$AMAX`占总量的15%, 用来实现以下2个核心目的：
-- Armonia核心团队的项目建设所需经费来源
-- 释放足够的币到市场流通，允许参与竞选挖矿的节点的质押币和投票的币能够满足5%的总体质押量来激活挖矿。
+* Market sales allocation
+Among the total allocation, `$AMAX` tokens to be used in the market sales occupies 15% of the total amount, which will serve the following purposes:
+- The fund collected can support the project development by Armonia's core team and the `DAO` body;
+- The tokens that are sold to the public can be used to mining node staking and voting to allow for 5% staking ratio for mining activation;
 
-市场募集份额里面又分2%的种子轮私募，3%的机构私募，和剩余10%的去中心化发行IDO。并且采用和系统质押总数成正比的Bonding curve的公式来决定`$AMAX`的动态价格。另外凡是私募的都有锁仓机制，确保市场有足够的时间运行Armonia全方位生态应用建和价值建设起来。
+Among the market sales, there are 2% for seed-round sale, 3% for institutional sale and 10% for `IDO` which will use a bonding curve formula to bind the `$AMAX` price with the total staking amount.
 
-其次，10%的币量用于基金会，主要在市值管理和长期发展去中心化自助组织所用。其代币将存放于`amax.fund`账户，由Armonia核心团队多签管理，可以接受市场的整体监督，确保用于有助于生态发展的地方。
+* Armonia Foundation allocation
+In order to support overall health of market capital and `DAO` development, 10% of `$AMAX` will be allocated to Armonia Foundation and kept in `amax.fund` which can be supervised by the entire community and will be only used for advancement of the ecosystem.
 
-最后，占75%的币量将用于生态内的各类挖矿，在Armonia称为万物即挖矿。
+* Mining allocation
+In total there'll be 75% of `$AMAX`'s total supply to be used in mining activites within Armonia's ecosystem and it is regarded as "mining of things", meaning every value contributing actitivities in the ecossytem can be in the form of mining and participants can be thus rewarded with tokens including `$AMAX'.
 
 ### Mining of Things (MoT)
 在Armonia的生态建设理念里，凡是对生态做出了某种贡献的，增加了整体价值的，都可以称为挖矿的行为，必定有相应的收益激励。
