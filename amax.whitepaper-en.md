@@ -286,17 +286,17 @@ The ecosystem development mining activities can include but are not limited to t
 - cross some main assets over from other well-know blokchains
 
 ## Infrasturcture support for We3
-To achieve Web3，it means 意味着很多中心化下的互联网的基础服务都可以在去中心化的方式下提供出来，并通过代币结算被满足应用层需求的各项基础设施服务。
+To achieve Web3，it means a host of internet services can be built and offered in a decentralized manner as well as metered and compensated with crypto tokens.
 
-Web3的去中心化服务建设包括但是不限制于以下类型：
-- DFS：去中心化文件存储服务
-- DCOMP：去中心化的计算服务（例：租用虚拟机后部署容器并运行一段时间的服务）
-- DNET：去中心化网络服务，包括流量分发，路由服务等
-- DCDN：去中心化的CDN服务
-- DDNS：去中心化的域名解析服务
-- DID：去中心化的身份认证服务
+Web3 enabling services include but are not limited to the following:
+- DFS：Decentralized File Storage
+- DCOMP: Decentralized Computing Resources (E.g. VM leasing for application running）
+- DNET: Decentralized Networking, including traffic distribution/forwarding and routing etc.
+- DCDN: Decentralized CDN Service
+- DDNS: Decentralized DNS Service
+- DID: Decentralized Identity Service
 
-如果有效地衡量以上基础服务的贡献，并相应用`$AMAX`来激励，是Armonia支持web3需要解决的一个课题。
+Armonia core team endeavors to build the above list of decentralized web3 services by effectively metering the health and usage of services with `$AMAX` as the main tokens to incentivize all contributors to web3 enablement.
 
 ## xDAO governance
 在去中心化的世界里面，技术、产品还有整个生态的发展，有很多需要优化改进的地方，这都需要有一个链下治理决策然后完成链上升级变更的过程。但是这种治理必须同样符合去中心化理念，是由社区利益相关者积极参与，通过链上投票完成各项提议复议，最后执行的过程。
