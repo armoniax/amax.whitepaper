@@ -252,17 +252,19 @@ The overall allocation of `$AMAX` tokens are as follows:
 
 * Market sales allocation
   
-Among the total allocation, `$AMAX` tokens to be used in the market sales occupies 15% of the total amount, which will serve the following purposes:
-- The fund collected can support the project development by Armonia's core team and the `DAO` body;
-- The tokens that are sold to the public can be used to mining node staking and voting to allow for 5% staking ratio for mining activation;
+ Among the total allocation, `$AMAX` tokens to be used in the market sales occupies 15% of the total amount, which will serve the following purposes:
+ * The fund collected can support the project development by Armonia's core team and the `DAO` body;
+ * The tokens that are sold to the public can be used to mining node staking and voting to allow for 5% staking ratio for mining activation;
 
-Among the market sales, there are 2% for seed-round sale, 3% for institutional sale and 10% for `IDO` which will use a bonding curve formula to bind the `$AMAX` price with the total staking amount.
+ Among the market sales, there are 2% for seed-round sale, 3% for institutional sale and 10% for `IDO` which will use a bonding curve formula to bind the `$AMAX` price with the total staking amount.
 
 * Armonia Foundation allocation
-In order to support overall health of market capital and `DAO` development, 10% of `$AMAX` will be allocated to Armonia Foundation and kept in `amax.fund` which can be supervised by the entire community and will be only used for advancement of the ecosystem.
+
+ In order to support overall health of market capital and `DAO` development, 10% of `$AMAX` will be allocated to Armonia Foundation and kept in `amax.fund` which can be supervised by the entire community and will be only used for advancement of the ecosystem.
 
 * Mining allocation
-In total there'll be 75% of `$AMAX`'s total supply to be used in mining activites within Armonia's ecosystem and it is regarded as "mining of things", meaning every value contributing actitivities in the ecossytem can be in the form of mining and participants can be thus rewarded with tokens including `$AMAX'.
+
+ In total there'll be 75% of `$AMAX`'s total supply to be used in mining activites within Armonia's ecosystem and it is regarded as "mining of things", meaning every value contributing actitivities in the ecossytem can be in the form of mining and participants can be thus rewarded with tokens including `$AMAX'.
 
 ### Mining of Things (MoT)
 
