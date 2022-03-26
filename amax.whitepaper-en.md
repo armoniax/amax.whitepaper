@@ -12,11 +12,11 @@
     - [Multichain transaction routing](#multichain-transaction-routing)
     - [Multichain enabled applicaiton scenariors](#multichain-enabled-applicaiton-scenariors)
     - [Cross-chain in Armonia's multichain universe](#cross-chain-in-armonias-multichain-universe)
-    - [Armonia Meta Chain profile](#armonia-meta-chain-profile)
-    - [Armonia meta chain consensus algorithm](#armonia-meta-chain-consensus-algorithm)
-    - [Armonia meta chain accounts](#armonia-meta-chain-accounts)
-    - [First Armonia-child-chain](#first-armonia-child-chain)
     - [Cross-chain mechanism](#cross-chain-mechanism)
+  - [Armonia Meta Chain](#armonia-meta-chain)
+  - [Armonia meta chain consensus algorithm](#armonia-meta-chain-consensus-algorithm)
+  - [Armonia meta chain accounts](#armonia-meta-chain-accounts)
+  - [First Armonia-child-chain](#first-armonia-child-chain)
   - [Tokenomics](#tokenomics)
     - [Token distribution](#token-distribution)
     - [Mining of Things (MoT)](#mining-of-things-mot)
@@ -105,84 +105,6 @@ With multiple chains co-existing in Armonia's multichain universe, there will be
 <img src="./assets/armonia-multichain-scope.png" title="Armonia multichain and cross-chain relationship" width=800 />
 
 
-### Armonia Meta Chain profile
-
-| Feature | Description | Memo |
-|---|---|---|
-| Native token | `AMAX` | issued in system contract: **amax.token** |
-| Precision | 8 | the smallest unit is 1 of 100 million |
-| Total supply | 1,000,000,000 | Inflate/deflate via DAO to support ecossytem advancement |
-| Consenus algorithm | APOS | Armonia's DPOS |
-| Virtual machine | WASM | High-performing VM |
-| anti-sybil attack | resource staking and leasing model with `$AMAX`| zero gas fees | 
-| Block interval | 1 sec | a fine choice between stability and transaction onchain speed |
-| TPS | 5000+ | benchmarked with transfer transaction, `v1.0` |
-
-### Armonia meta chain consensus algorithm
-
-As the founding chain in Armonia's multichain network, `AMC` serves as the trust anchor and value engine to all other spawned child chains. For those who adopt `$AMAX` as the native token of their own chains for basic functions like transaction fees. Hence, it is crticial to ensure the security and reliability of Armonia meta chain. It means there should be a sufficient level of decentralization and anti-censoship capability as described as follows:
-
-1. There should be enough copies of blockchain data maintained by mining nodes such that even if there were direct attacks to the mining nodes the network can still survive and operate and eventually return to a good working state;
-2. When there were vicious nodes trying to sabotage the network, the activities can be discovered and even corrected as long as the total number of bad actors are below 1/3 of the total set of validators;
-3. Those mining nodes can be replaced by standby nodes when they are not on their duty.
-
-Armonia has invented a new consensus algorithm which is named as Armonia DPOS or short as APOS for `AMC` chain, the mother chain and the other child chains can adopt their own consensus algorithm to secure their network.
-
-The constructs of APOS is as follows:
-1. All network nodes that run `AMC` node software can participate in block production for both main and vice blocks that form `AMC` main and backup chain(s);
-2. Those nodes that are elected through a non-stop voting process and ranked top `21` in the list become the mainnode and the rest `10,000` nodes are the backup nodes; 
-3. The voting process requires the candidate nodes to stake a certain amount of `AMAX` tokens in order to receive votes from the Armonia community; 
-4. The other nodes neither in the main nor backup node list are called observer nodes;
-5. The main nodes take turns according to VRF algorithm to produce the main blocks and receive newly inflated `AMAX` tokens;
-6. The backup nodes also take turns accoring to VRF algorithm but are applied in a much larger quorum (10,0000 nodes for one backup chain) and each backup block mined will reward the miner a certain amount of `AMAX` tokens; the backup block must refer to the latest main block being produced by the main node.
-7. The main nodes shall include backup blocks during generating a main block and will be rewarded for correctly including a good bakup block;
-8. When a bad backup block is included into the main block, it will not be accepted by the whole network and thus discarded by other nodes;
-9. When a main blocked is missed or faulty, the backup block will repace the main block to become the actual main block and the producer node thus receives main block reward;
-10. The finality of main blocks is determined through implementation of `aBFT` algorithm. However the finality of backup blocks are determined by the main blocks;
-11. Transactions with main blocks must be not only verified but also executed to update the corresponding global state for the network; However, the backup blocks are only required to be verified in order to be accepted by the whole network. This way it avoids the double-spending problem and allows for the nodes to conduct parallel processing for both main and backup blocks;
-12. To prevent those greedy but lazy nodes from cheating the network by producting empty or useless blocks that include useless fabricated transactions, the reward to the backup nodes for producing backup blocks will be corresponding to the simliarity of block transactions compared to those in the main blocks at the same height. Therefore, it also means the reward will be only calculated and settled in the next block height;
-
-The interwoven main and backup `AMC` chains can have following block generation scenariors:
-
-- In general the main and backup blocks are interwoven as following:
-<img src="./assets/apos-normal.png" width=800 />
-
-- One Armonia main node produces 6 blocks in a row before shifting to other main nodes but backup nodes shift each time after producing only one backup block:
-<img src="./assets/apos-bp-nodes.png" width=800>
-
-- If the on-duty backup node couldn't produce the block of a timeslot, the next main block won't include the backup block:
-<img src="./assets/apos_vicenode_fail.png" width=800>
-
-- If the on-duty main node couldn't produce the block of a timeslot, the next (`n+1`) main block will take the current backup block as the main block and its producing node will be rewarded with main block reward amount. However the prior (`n'-1`) backup block will be thus not rewarded as no main block is including it:
-<img src="./assets/apos_mainnode_fail.png" width=800>
-
-To summarize, for `AMC` chain, it can be composed of one main chain and one to several backup chains that involves in total `21 + 10,000 * n` number of mining nodes. Unlike a pure DPOS consensus algorithm that rewards cadidate nodes not even running the node software, APOS only rewards those that run the node software, synchronize with the network and actually produce either main or backup blocks. This way, it greatly improves the overall security of `AMC` chain.
-
-With more backup nodes to participate, even though each backup node might get lesser chance to mine a block and thus mine lesser `AMAX`, the overall network security and  and community consensus are enhanced, which would eventually contribute to `AMAX` token value. This would thus encourage more to particate and further increase the awareness of the project. As for the number of backup chains, it can be desided through DAO governance body.
-
-Following diagram demonstrate what `AMC` shall look like with the number of backup chains increases:
-<img src="./assets/apos_main_vice_subchains.png" width=800 />
-
-Last but not least, voting for mining node election will not start within the first year since its inception as `AMC` chain will be under fast-pace development and upgrade mode. Therefore the orignal 21 main nodes will not yield any new `AMAX` token upon each block production. The voting is expected to be open to the general public after passing `v1.0` milestone and new tokens will only be newly mined/inflated after all staked and voted `AMAX` tokens are more than 5% of the total supply.
-
-### Armonia meta chain accounts
-
-Rather than utilize public-key derived address to denote each account, `AMC` adopts account name based account model. One account can be bound with one to multiple public keys and requires its owner to register/activate itself before any transaction could happen with the account. Each account name is composed of 12 alphanumeric characters ([`1-5`,`a-z`,`.`]) and can be extended to support 24 such characters ([`1-9`,`a-z`,`.`,`#`,`@`]) Account owners must stake a certain amount of `$AMAX` tokens for reserving a ccertain amount of system RAM, CPU and network etc resources in order to particate in all kinds of transactions.
-
-
-### First Armonia-child-chain
-In order to embrace the biggest crypto ecosystem in the current world, Armonia's first child chain will stay 100% comptiable with Ethereum and their cloned chains. Its main features are:
-
-| Feature | Description | Memo |
-|---|---|---|
-| Native token | `AMAX` | bridged from `AMC` chain |
-| Consensus algorithm | PoSA |  |
-| Virtual machine | EVM | support solidity language for its smart contract development |
-| Anti-sybil attack | Gas for transaction fees, paid in `$AMAX` | `Gas fees = Gas amount x Gas price` |
-| Account model | public key derived addresses | Format: `0x...` |
-| Block interval | 3 seconds | |
-| TPS | 160+ | Bechmarked with transfer transactions, `v1.0` ｜
-
 ### Cross-chain mechanism
 
 In Armonia's multichain universe, the ability of "moving" an asset from one chain to another can be critical for many users or asset owners. If the originating asset resides in its home chain whereby the assets are issued from, "moving" the asset means locking an asset in the oringating chain and minting the assets from the destination chain and trasferring the assets to the desginated account. But if the orignating asset resides in non-native chain, "moving" the asset means destroying or burning the asset from the originating chain and unlocking the asset and sending back to the designated account from the home chain to the asset. This two-way moving activities that happen between either two chains within Armonia's multichain universe are so-called cross-chain transactions. 
@@ -233,6 +155,87 @@ Note:
 The detailed workflow diagram:
 
 <img src="./assets/armonia-cross-bridge-cn.png" width=800 />
+
+## Armonia Meta Chain
+
+`AMC's basi profile:
+
+| Feature | Description | Memo |
+|---|---|---|
+| Native token | `AMAX` | issued in system contract: **amax.token** |
+| Precision | 8 | the smallest unit is 1 of 100 million |
+| Total supply | 1,000,000,000 | Inflate/deflate via DAO to support ecossytem advancement |
+| Consenus algorithm | APOS | Armonia's DPOS |
+| Virtual machine | WASM | High-performing VM |
+| anti-sybil attack | resource staking and leasing model with `$AMAX`| zero gas fees | 
+| Block interval | 1 sec | a fine choice between stability and transaction onchain speed |
+| TPS | 5000+ | benchmarked with transfer transaction, `v1.0` |
+
+## Armonia meta chain consensus algorithm
+
+As the founding chain in Armonia's multichain network, `AMC` serves as the trust anchor and value engine to all other spawned child chains. For those who adopt `$AMAX` as the native token of their own chains for basic functions like transaction fees. Hence, it is crticial to ensure the security and reliability of Armonia meta chain. It means there should be a sufficient level of decentralization and anti-censoship capability as described as follows:
+
+1. There should be enough copies of blockchain data maintained by mining nodes such that even if there were direct attacks to the mining nodes the network can still survive and operate and eventually return to a good working state;
+2. When there were vicious nodes trying to sabotage the network, the activities can be discovered and even corrected as long as the total number of bad actors are below 1/3 of the total set of validators;
+3. Those mining nodes can be replaced by standby nodes when they are not on their duty.
+
+Armonia has invented a new consensus algorithm which is named as Armonia DPOS or short as APOS for `AMC` chain, the mother chain and the other child chains can adopt their own consensus algorithm to secure their network.
+
+The constructs of APOS is as follows:
+1. All network nodes that run `AMC` node software can participate in block production for both main and vice blocks that form `AMC` main and backup chain(s);
+2. Those nodes that are elected through a non-stop voting process and ranked top `21` in the list become the mainnode and the rest `10,000` nodes are the backup nodes; 
+3. The voting process requires the candidate nodes to stake a certain amount of `AMAX` tokens in order to receive votes from the Armonia community; 
+4. The other nodes neither in the main nor backup node list are called observer nodes;
+5. The main nodes take turns according to VRF algorithm to produce the main blocks and receive newly inflated `AMAX` tokens;
+6. The backup nodes also take turns accoring to VRF algorithm but are applied in a much larger quorum (10,0000 nodes for one backup chain) and each backup block mined will reward the miner a certain amount of `AMAX` tokens; the backup block must refer to the latest main block being produced by the main node.
+7. The main nodes shall include backup blocks during generating a main block and will be rewarded for correctly including a good bakup block;
+8. When a bad backup block is included into the main block, it will not be accepted by the whole network and thus discarded by other nodes;
+9. When a main blocked is missed or faulty, the backup block will repace the main block to become the actual main block and the producer node thus receives main block reward;
+10. The finality of main blocks is determined through implementation of `aBFT` algorithm. However the finality of backup blocks are determined by the main blocks;
+11. Transactions with main blocks must be not only verified but also executed to update the corresponding global state for the network; However, the backup blocks are only required to be verified in order to be accepted by the whole network. This way it avoids the double-spending problem and allows for the nodes to conduct parallel processing for both main and backup blocks;
+12. To prevent those greedy but lazy nodes from cheating the network by producting empty or useless blocks that include useless fabricated transactions, the reward to the backup nodes for producing backup blocks will be corresponding to the simliarity of block transactions compared to those in the main blocks at the same height. Therefore, it also means the reward will be only calculated and settled in the next block height;
+
+The interwoven main and backup `AMC` chains can have following block generation scenariors:
+
+- In general the main and backup blocks are interwoven as following:
+<img src="./assets/apos-normal.png" width=800 />
+
+- One Armonia main node produces 6 blocks in a row before shifting to other main nodes but backup nodes shift each time after producing only one backup block:
+<img src="./assets/apos-bp-nodes.png" width=800>
+
+- If the on-duty backup node couldn't produce the block of a timeslot, the next main block won't include the backup block:
+<img src="./assets/apos_vicenode_fail.png" width=800>
+
+- If the on-duty main node couldn't produce the block of a timeslot, the next (`n+1`) main block will take the current backup block as the main block and its producing node will be rewarded with main block reward amount. However the prior (`n'-1`) backup block will be thus not rewarded as no main block is including it:
+<img src="./assets/apos_mainnode_fail.png" width=800>
+
+To summarize, for `AMC` chain, it can be composed of one main chain and one to several backup chains that involves in total `21 + 10,000 * n` number of mining nodes. Unlike a pure DPOS consensus algorithm that rewards cadidate nodes not even running the node software, APOS only rewards those that run the node software, synchronize with the network and actually produce either main or backup blocks. This way, it greatly improves the overall security of `AMC` chain.
+
+With more backup nodes to participate, even though each backup node might get lesser chance to mine a block and thus mine lesser `AMAX`, the overall network security and  and community consensus are enhanced, which would eventually contribute to `AMAX` token value. This would thus encourage more to particate and further increase the awareness of the project. As for the number of backup chains, it can be desided through DAO governance body.
+
+Following diagram demonstrate what `AMC` shall look like with the number of backup chains increases:
+<img src="./assets/apos_main_vice_subchains.png" width=800 />
+
+Last but not least, voting for mining node election will not start within the first year since its inception as `AMC` chain will be under fast-pace development and upgrade mode. Therefore the orignal 21 main nodes will not yield any new `AMAX` token upon each block production. The voting is expected to be open to the general public after passing `v1.0` milestone and new tokens will only be newly mined/inflated after all staked and voted `AMAX` tokens are more than 5% of the total supply.
+
+## Armonia meta chain accounts
+
+Rather than utilize public-key derived address to denote each account, `AMC` adopts account name based account model. One account can be bound with one to multiple public keys and requires its owner to register/activate itself before any transaction could happen with the account. Each account name is composed of 12 alphanumeric characters ([`1-5`,`a-z`,`.`]) and can be extended to support 24 such characters ([`1-9`,`a-z`,`.`,`#`,`@`]) Account owners must stake a certain amount of `$AMAX` tokens for reserving a ccertain amount of system RAM, CPU and network etc resources in order to particate in all kinds of transactions.
+
+
+## First Armonia-child-chain
+In order to embrace the biggest crypto ecosystem in the current world, Armonia's first child chain will stay 100% comptiable with Ethereum and their cloned chains. Its main features are:
+
+| Feature | Description | Memo |
+|---|---|---|
+| Native token | `AMAX` | bridged from `AMC` chain |
+| Consensus algorithm | PoSA |  |
+| Virtual machine | EVM | support solidity language for its smart contract development |
+| Anti-sybil attack | Gas for transaction fees, paid in `$AMAX` | `Gas fees = Gas amount x Gas price` |
+| Account model | public key derived addresses | Format: `0x...` |
+| Block interval | 3 seconds | |
+| TPS | 160+ | Bechmarked with transfer transactions, `v1.0` ｜
+
 
 ## Tokenomics
 
