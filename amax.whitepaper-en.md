@@ -14,8 +14,8 @@
     - [Cross-chain in Armonia's multichain universe](#cross-chain-in-armonias-multichain-universe)
     - [Cross-chain mechanism](#cross-chain-mechanism)
   - [Armonia Meta Chain](#armonia-meta-chain)
-  - [Armonia meta chain consensus algorithm](#armonia-meta-chain-consensus-algorithm)
-  - [Armonia meta chain accounts](#armonia-meta-chain-accounts)
+    - [Armonia meta chain consensus algorithm](#armonia-meta-chain-consensus-algorithm)
+    - [Armonia meta chain accounts](#armonia-meta-chain-accounts)
   - [First Armonia-child-chain](#first-armonia-child-chain)
   - [Tokenomics](#tokenomics)
     - [Token distribution](#token-distribution)
@@ -171,7 +171,7 @@ The detailed workflow diagram:
 | Block interval | 1 sec | a fine choice between stability and transaction onchain speed |
 | TPS | 5000+ | benchmarked with transfer transaction, `v1.0` |
 
-## Armonia meta chain consensus algorithm
+### Armonia meta chain consensus algorithm
 
 As the founding chain in Armonia's multichain network, `AMC` serves as the trust anchor and value engine to all other spawned child chains. For those who adopt `$AMAX` as the native token of their own chains for basic functions like transaction fees. Hence, it is crticial to ensure the security and reliability of Armonia meta chain. It means there should be a sufficient level of decentralization and anti-censoship capability as described as follows:
 
@@ -218,10 +218,9 @@ Following diagram demonstrate what `AMC` shall look like with the number of back
 
 Last but not least, voting for mining node election will not start within the first year since its inception as `AMC` chain will be under fast-pace development and upgrade mode. Therefore the orignal 21 main nodes will not yield any new `AMAX` token upon each block production. The voting is expected to be open to the general public after passing `v1.0` milestone and new tokens will only be newly mined/inflated after all staked and voted `AMAX` tokens are more than 5% of the total supply.
 
-## Armonia meta chain accounts
+### Armonia meta chain accounts
 
 Rather than utilize public-key derived address to denote each account, `AMC` adopts account name based account model. One account can be bound with one to multiple public keys and requires its owner to register/activate itself before any transaction could happen with the account. Each account name is composed of 12 alphanumeric characters ([`1-5`,`a-z`,`.`]) and can be extended to support 24 such characters ([`1-9`,`a-z`,`.`,`#`,`@`]) Account owners must stake a certain amount of `$AMAX` tokens for reserving a ccertain amount of system RAM, CPU and network etc resources in order to particate in all kinds of transactions.
-
 
 ## First Armonia-child-chain
 In order to embrace the biggest crypto ecosystem in the current world, Armonia's first child chain will stay 100% comptiable with Ethereum and their cloned chains. Its main features are:
