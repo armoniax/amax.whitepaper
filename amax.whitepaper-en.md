@@ -251,6 +251,7 @@ The overall allocation of `$AMAX` tokens are as follows:
 <img src="./assets/amax-total-allocation_en.png" width=800 />
 
 * Market sales allocation
+  
 Among the total allocation, `$AMAX` tokens to be used in the market sales occupies 15% of the total amount, which will serve the following purposes:
 - The fund collected can support the project development by Armonia's core team and the `DAO` body;
 - The tokens that are sold to the public can be used to mining node staking and voting to allow for 5% staking ratio for mining activation;
