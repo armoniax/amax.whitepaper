@@ -268,7 +268,7 @@ In general following types of mining pools are existing:
 |Mining category|Mining Ratio (`$AMAX`)| Description |
 |---|---|---|
 |Blockchain development Mining | 30% |15%: for achiving milestone development: `v1.0`, `v2.0`和`v3.0`; Afterwards, 15%: `DAO` driven development |
-|Main-blocks mining | 5% | halving cycle: 30 months, 4 rounds, then double halving cyle to 60 month | 
+|Main-blocks mining | 5% | halving every 30 months | 
 |Backup-blocks mining | 5% | ditto |
 |Web3 mining | 10% | to reward those who providing web3 resources |  
 |Ecosystem development mining| 25% | any other beneficiary activities to the ecosystem development |
@@ -280,7 +280,7 @@ The ecosystem development mining activities can include but are not limited to t
 - cross some main assets over from other well-know blokchains
 
 ## Infrasturcture support for We3
-要建设Web3，意味着很多中心化下的互联网的基础服务都可以在去中心化的方式下提供出来，并通过代币结算被满足应用层需求的各项基础设施服务。
+To achieve Web3，it means 意味着很多中心化下的互联网的基础服务都可以在去中心化的方式下提供出来，并通过代币结算被满足应用层需求的各项基础设施服务。
 
 Web3的去中心化服务建设包括但是不限制于以下类型：
 - DFS：去中心化文件存储服务
