@@ -261,23 +261,23 @@ In order to support overall health of market capital and `DAO` development, 10% 
 In total there'll be 75% of `$AMAX`'s total supply to be used in mining activites within Armonia's ecosystem and it is regarded as "mining of things", meaning every value contributing actitivities in the ecossytem can be in the form of mining and participants can be thus rewarded with tokens including `$AMAX'.
 
 ### Mining of Things (MoT)
-在Armonia的生态建设理念里，凡是对生态做出了某种贡献的，增加了整体价值的，都可以称为挖矿的行为，必定有相应的收益激励。
 
-总体上从大的方面讲，有以下挖矿的方式存在：
-|挖矿种类|分配比例|挖矿说明|
+It is in Armonia's belief that every activity that helps to add value to the entire Armonia ecosystem and community shall be rewarded and mining is a good way to support the activities and rewarding to be conducted in smart-contract based mining pools.
+
+In general following types of mining pools are existing:
+|Mining category|Mining Ratio (`$AMAX`)| Description |
 |---|---|---|
-|公链建设挖矿 - 早期阶段 | 15% |由早期的核心团队领导完成公链的`v1.0`, `v2.0`和`v3.0`的里程碑建设|
-|公链建设挖矿 - 后期阶段 | 15% |由建设而成的开发者DAO全面驱动的公链技术和生态应用的发展|
-|主节点挖矿 | 5% | 30月减半机制，运行12月后改成：5年减半机制| 
-|从节点挖矿 | 5% | 30月减半机制，运行12月后改成：5年减半机制|
-|Web3挖矿 | 10% | 为服务和建设web3应用体系而激励生态内的相应挖矿激励 |  
-|生态建设挖矿| 25% | 其它凡是有利于生态建设的各类短期或者周期性的挖矿激励 |
+|Blockchain development Mining | 30% |15%: for achiving milestone development: `v1.0`, `v2.0`和`v3.0`; Afterwards, 15%: `DAO` driven development |
+|Main-blocks mining | 5% | halving cycle: 30 months, 4 rounds, then double halving cyle to 60 month | 
+|Backup-blocks mining | 5% | ditto |
+|Web3 mining | 10% | to reward those who providing web3 resources |  
+|Ecosystem development mining| 25% | any other beneficiary activities to the ecosystem development |
 
-其中生态挖矿包括但是不限于以下类型：
-- 注册邀请用户加入
-- 提供KYC、KYB的供应商的服务
-- 提供预言机服务的行为
-- 从第三方公链把主流资产跨链过来的行为
+The ecosystem development mining activities can include but are not limited to the following:
+- registration of accounts and inviting other users to register their accounts
+- provide KYC/KYB service and cerity the accounts onchain
+- provide other kinds of oracle services
+- cross some main assets over from other well-know blokchains
 
 ## Infrasturcture support for We3
 要建设Web3，意味着很多中心化下的互联网的基础服务都可以在去中心化的方式下提供出来，并通过代币结算被满足应用层需求的各项基础设施服务。
