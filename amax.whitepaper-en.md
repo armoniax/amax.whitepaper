@@ -219,18 +219,18 @@ Note: Distribution of assets from `A` chain has been determined by its consenus 
 2. Deploy a smart contract `as_custody` onto `A` chain to lock cross-chain assets;
 3. Deploy a smart contract `as_erc20` onto `B` for issuing, minting and destroying mirrored assets, governed by its DAO body.
 
-* 流程如下
-1. BO找到DAO，申请在B链上的跨链资产，比如说100万枚AS；DAO在BO打入100万A链上的资产到`as_custody`,在B链上通过`as_erc20`合约铸币100万AS给BO；
-1. BO开始通过`amax.xswap`上面挂上出售的订单，并且质押两倍价值的AMAX代币在该合约内；
-1. BU通过`amax.xswap`找到自己愿意成交的订单，可以部分或者全部吃下该订单；
-1. BU将AS资产从A链打入到BO的账户或者地址；同时将该交易`TxID`通知到`amax.xswap`的订单状态内；
-1. BO在得到订单状态变更后将相应的AS资产在目标链B打入到BU的地址或者账户上，从而完成订单；
+* Workflow
+1. `BO` approaches `DAO` and request for briding assets from `B`, say 1 mn `AS` and sends them into `as_custody`. Then `DAO` mints 1 mn AS from `as_erc20` and transfer them to `BO`;
+2. `BO` places orders on `amax.xswap` with `$AMAX` as escrow that is locked into the same contract;
+3. `BU` finds the orders from `amax.xswap` they want to take and they can take them partially or whoely;
+4. `BU` sends `AS` from `A` chain to `BO`'s account and posts its transaction ID to `amax.xswap` as a matter of payment proof;
+5. `BO` sends `AS` from `B` chain to `BU`'s account upon notification of order status change and close the order with `BU`'s confirmation;
    
-注：
-1. 如果兑换订单产生纠纷，将由`DAO`来帮助完成仲裁过程，确保订单的正确执行或关闭；
-2. 母链M也可能是A链或者B链之一。
+Note:
+1. when there's any dispute about swap orders, `DAO` will be invovled to do the arbitrage to ensure the complete clousure of the orders;
+2. `AMC` can be also `A` or `B` chain.
 
-流程示意图如下：
+The detailed workflow diagram:
 
 <img src="./assets/armonia-cross-bridge-cn.png" width=800 />
 
