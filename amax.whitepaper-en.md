@@ -305,7 +305,7 @@ Therefore it is necessary to establish a decentralized autonomous organization o
 
 For a `DAO` boday, the common governnance workflow is as follows:
 
-<img src="./assets/amax_dao_process.png" width=800 />
+<img src="./assets/amax_dao_process_en.png" width=800 />
 
 - `DAO` body deployes the smart contract which is open sourced to all participates;
 - Members of `DAO` may be recruited through a certin process and registered with the `DAO` body but it may be also that general public is able to join the body for its managed activities;
