@@ -325,11 +325,11 @@ Following basic `DAOs` will be founded:
 ## Technology roadmap
 
 Technology roadmap:
-- v1.0：实现多链系统的母链和第一条EVM子链的搭建和部署，母链实现APOS共识机制，双向跨链实现;
-- v2.0：实现生态内开放式的web3资源共享挖矿机制和相应web3的访问技术对接;
-- v3.0：实现多链的L0-base，L0, L1的模块化和模板化SDK，可以快速搭建生态内各类单链.
+- v1.0：Armonia meta chain (WASM based) and the first child chain (EVM based) to be successfuly launched, with meta chain supporting `APOS` consensus algorithm and providing two-way cross-chain ability between `AMC` and the first child chain;
+- v2.0：enable web3.0 resource mining and provide SDK for interfacing with web3 resources;
+- v3.0：provide layer0-base, layer-0, layer-1 etc template implementation to enalbe rapid blockchain development;
 
-在实现v3.0之后的技术路线图，必将由`developer dao`来全面驱动和治理实现完成。
+After Armonia `v3.0` has been achieved, all development will be driven by `developer dao`.
 
 ## Reference
 - metaverse: https://theconversation.com/the-metaverse-is-money-and-crypto-is-king-why-youll-be-on-a-blockchain-when-youre-virtual-world-hopping-171659
