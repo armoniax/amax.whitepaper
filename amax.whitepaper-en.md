@@ -103,7 +103,7 @@ In Armonia's multichain empowered ecosystem, numerous application scenarios can 
 
 With multiple chains co-existing in Armonia's multichain universe, there will be interaction i.e. cross-chain activities between `AMC` and `ACC` chains as well other public chains like bitcoin and ethereume. Armonia endeavors to build following cross-chain capability for blockchain users:
 
-<img src="./assets/armonia-multichain-scope.png" title="Armonia multichain and cross-chain relationship" width=800 />
+<img src="./assets/armonia-multichain-scope_en.png" title="Armonia multichain and cross-chain relationship" width=800 />
 
 
 ### Cross-chain mechanism
