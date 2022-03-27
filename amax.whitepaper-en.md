@@ -215,7 +215,7 @@ To summarize, for `AMC` chain, it can be composed of one main chain and one to s
 With more backup nodes to participate, even though each backup node might get lesser chance to mine a block and thus mine lesser `AMAX`, the overall network security and  and community consensus are enhanced, which would eventually contribute to `AMAX` token value. This would thus encourage more to particate and further increase the awareness of the project. As for the number of backup chains, it can be desided through DAO governance body.
 
 Following diagram demonstrate what `AMC` shall look like with the number of backup chains increases:
-<img src="./assets/apos_main_vice_subchain_en.png" width=800 />
+<img src="./assets/armonia-cross-bridge_en.png" width=800 />
 
 Last but not least, voting for mining node election will not start within the first year since its inception as `AMC` chain will be under fast-pace development and upgrade mode. Therefore the orignal 21 main nodes will not yield any new `AMAX` token upon each block production. The voting is expected to be open to the general public after passing `v1.0` milestone and new tokens will only be newly mined/inflated after all staked and voted `AMAX` tokens are more than 5% of the total supply.
 
