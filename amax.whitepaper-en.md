@@ -84,7 +84,7 @@ Furthermore, Armonia will also provide layer-0, layer-1 template components and 
 ### Multichain transaction routing
 
 As the common building block for layer-0 in Armonia SDK, it serves to support three types of transaction routing in Armonia multichain system: 1) unicast; 2) groupcast; 3) broadcast:
-<img src="./assets/tx_multichain_comm.png" width=800 />
+<img src="./assets/tx_multichain_comm_en.png" width=800 />
 
 That means, one user can intiate a blockchain transaction that can reach one single chain or a group of prescribed chains or even to every chain within Armonia multichain network. That may be helpful or even critical in a coordinated operation in the multichain network. But of course when there is any chain-level issue like lack of gas fees that could still cause the transaction execution failure, which could create an inconsistent behavior for various chains being targeted by the transaction and this problem has to be addressed rather at the application level.
 
