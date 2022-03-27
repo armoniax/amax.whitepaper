@@ -307,20 +307,20 @@ For a `DAO` boday, the common governnance workflow is as follows:
 
 <img src="./assets/amax_dao_process.png" width=800 />
 
-- 其中DAO智能合约由相应DAO组织来实现部署，并开放源码给到DAO组织里面的成员；
-- DAO组织里面的成员也需要通过一个招募的过程完成，并通过DAO合约发行的凭证代币获得投票资格；
-- DAO成员的投票数量根据DAO合约协议相应发放；
-- DAO组织里面的成员都可以进行某个事项的提议，包括完成复议的奖励金额提议，可以是个人提供也可以是DAO组织提供
-- DAO成员参与复议投票，可以有具体的投票截止时间，按照一币一票等规则；
-- 计票后根据该轮选择的决策规则，来判定提议是否通过；
-- 如果提议通过，则通过指定的执行人来完成提议的执行；
-- DAO组织最后检查执行结果并完成该提议的最终状态为结束
+- `DAO` body deployes the smart contract which is open sourced to all participates;
+- Members of `DAO` may be recruited through a certin process and registered with the `DAO` body but it may be also that general public is able to join the body for its managed activities;
+- Members may be distriubted with voting tokens according to the governance protocol;
+- Any member within `DAO` body can make proposals for particular subjects and allocate the funds to reward those who can help fulfill the objectives. The funds may come from the member himself or from the `DAO` treasury reserve;
+- All members can vote for the proposals and the voting period is time controlled. The vote can be one-account-one-vote or one-token-one-vote based;
+- There can be equal vote, weighted vote or median vote,...etc types for computing/determing if the proposal or issue can be passed; 
+- If the issue is passed, the pre-designated account or member may be required to execute the proposal;
+- `DAO` boday may review and confirm the execution result.
   
-Armonia里面的一些基本DAO有如下：
-- 开发者DAO：负责公链开发驱动，包括功能提议实现修改和发布，并提供激励和审核机制；
-- 节点DAO：负责挖矿节点之间的协调，整个区块链网络的安全保障议题事项的落实，备链挖矿的决议等；
-- AMAX代币DAO：AMAX的发行和分配、机制；
-- 万物挖矿：包括各项新的矿池的开设和关闭、激励来源和执行；
+Following basic `DAOs` will be founded:
+- Developers DAO: It guides the blockchain technology development, including blockhcain feature upgrade and bug fixes, with preallocated incentive tokens to reward the contributors;
+- Miners DAO: Once `AMC` chain has been activited for inflation, each mined block contains a certain amount of infalted `AMAX` token to reward the miners. It is the miners DAO to cordinate among the miners for ensurign network security. E.g. how many backup chains shall be supported to include as many miners as possible;
+- AMAX DAO: to govern the issuance, minting and buring of `AMAX` tokens;
+- `MoT` DAO: Mining of things governance body to determine what minnig pools shall be created and how to reward the miners etc.
   
 ## Technology roadmap
 
