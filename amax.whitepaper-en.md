@@ -212,19 +212,19 @@ The interwoven main and backup `AMC` chains can have following block generation 
 
 To summarize, for `AMC` chain, it can be composed of one main chain and one to several backup chains that involves in total `21 + 10,000 * n` number of mining nodes. Unlike a pure DPOS consensus algorithm that rewards cadidate nodes not even running the node software, APOS only rewards those that run the node software, synchronize with the network and actually produce either main or backup blocks. This way, it greatly improves the overall security of `AMC` chain.
 
-With more backup nodes to participate, even though each backup node might get lesser chance to mine a block and thus mine lesser `AMAX`, the overall network security and  and community consensus are enhanced, which would eventually contribute to `AMAX` token value. This would thus encourage more to particate and further increase the awareness of the project. As for the number of backup chains, it can be desided through DAO governance body.
+With more backup nodes to participate, even though each backup node might get fewer chances to mine a block and thus mine fewer `AMAX`s, the overall network security and community consensus are enhanced, which would eventually contribute to `AMAX` token value. This would encourage more users to particate and further increase the awareness of the project. As for the number of backup chains, it can be decided through DAO governance body.
 
-Following diagram demonstrate what `AMC` shall look like with the number of backup chains increases:
+The following diagram demonstrates what `AMC` shall look like with the number of backup chains increasing:
 <img src="./assets/apos_main_vice_subchain_en" width=800 />
 
-Last but not least, voting for mining node election will not start within the first year since its inception as `AMC` chain will be under fast-pace development and upgrade mode. Therefore the orignal 21 main nodes will not yield any new `AMAX` token upon each block production. The voting is expected to be open to the general public after passing `v1.0` milestone and new tokens will only be newly mined/inflated after all staked and voted `AMAX` tokens are more than 5% of the total supply.
+Last but not least, voting for mining node election will not start in the first year since its inception as `AMC` chain will be under fast-pace development and will upgrade its mode. Therefore, the orignal 21 main nodes will not yield any new `AMAX` token upon each block production. The voting is expected to be open to the public after passing `v1.0` milestone and new tokens will be newly minted/inflated after all staked and voted `AMAX` tokens reach more than 5% of the total supply.
 
 ### Account
 
-Rather than utilize public-key derived address to denote each account, `AMC` adopts account name based account model. One account can be bound with one to multiple public keys and requires its owner to register/activate itself before any transaction could happen with the account. Each account name is composed of 12 alphanumeric characters ([`1-5`,`a-z`,`.`]) and can be extended to support 24 such characters ([`1-9`,`a-z`,`.`,`#`,`@`]) Account owners must stake a certain amount of `$AMAX` tokens for reserving a ccertain amount of system RAM, CPU and network etc resources in order to particate in all kinds of transactions.
+Rather than utilize public-key derived address to denote each account, `AMC` adopts account model based on account name. One account can be bound with from one to multiple public keys and the key requires its owner to register/activate it before any transaction could be made within the account. Each account name is composed of 12 alphanumeric characters ([`1-5`,`a-z`,`.`]) and can be extended to support 24 such characters ([`1-9`,`a-z`,`.`,`#`,`@`]) Account owners must stake a certain amount of `$AMAX` tokens for reserving a ccertain amount of system RAM, CPU, network and other resources in order to particate in all kinds of transactions.
 
 ## First Armonia-child-chain
-In order to embrace the biggest crypto ecosystem in the current world, Armonia's first child chain will stay 100% comptiable with Ethereum and their cloned chains. Its main features are:
+In order to embrace the largest crypto ecosystem in the current world, Armonia's first child chain will stay 100% comptiable with Ethereum and their cloned chains. Its main features are:
 
 | Feature | Description | Memo |
 |---|---|---|
@@ -234,7 +234,7 @@ In order to embrace the biggest crypto ecosystem in the current world, Armonia's
 | Anti-sybil attack | Gas for transaction fees, paid in `$AMAX` | `Gas fees = Gas amount x Gas price` |
 | Account model | public key derived addresses | Format: `0x...` |
 | Block interval | 3 seconds | |
-| TPS | 160+ | Bechmarked with transfer transactions, `v1.0` ｜
+| TPS | 160+ | Benchmarked with transfer transactions, `v1.0` ｜
 
 
 ## Tokenomics
