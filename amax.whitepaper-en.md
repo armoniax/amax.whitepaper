@@ -308,13 +308,13 @@ For a `DAO` body, the common governnance workflow is as follows:
 <img src="./assets/amax_dao_process_en.png" width=800 />
 
 - `DAO` body deployes the smart contract which is open sourced to all participates;
-- Members of `DAO` may be recruited through a certin process and registered with the `DAO` body but it may be also that general public is able to join the body for its managed activities;
+- Members of `DAO` may be recruited through a certin process and registered with the `DAO` body but the public may also be able to join the body for its management activities;
 - Members may be distriubted with voting tokens according to the governance protocol;
-- Any member within `DAO` body can make proposals for particular subjects and allocate the funds to reward those who can help fulfill the objectives. The funds may come from the member himself or from the `DAO` treasury reserve;
-- All members can vote for the proposals and the voting period is time controlled. The vote can be one-account-one-vote or one-token-one-vote based;
-- There can be equal vote, weighted vote or median vote,...etc types for computing/determing if the proposal or issue can be passed; 
-- If the issue is passed, the pre-designated account or member may be required to execute the proposal;
-- `DAO` boday may review and confirm the execution result.
+- Any member within `DAO` body can make proposals for particular subjects and allocate the funds to reward those who help fulfill the objectives. The funds may come from the member himself or from the `DAO` treasury reserve;
+- All members can vote for the proposals and the voting period is time-controlled. The vote can be one-account-one-vote or one-token-one-vote based;
+- There can be equal vote, weighted vote, median vote, etc. types for computing/determining if the proposal or issue is passed; 
+- If the proposal is passed, the pre-designated account or member may be required to execute the proposal;
+- `DAO` body may review and confirm the execution result.
   
 Following basic `DAOs` will be founded:
 - Developers DAO: It guides the blockchain technology development, including blockhcain feature upgrade and bug fixes, with preallocated incentive tokens to reward the contributors;
