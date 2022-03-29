@@ -286,12 +286,12 @@ The ecosystem development mining activities include but are not limited to the f
 - transfer some main assets over from other well-known blokchains
 
 ## Infrasturcture support for We3
-To achieve Web3，it means a host of internet services can be built and offered in a decentralized manner as well as metered and compensated with crypto tokens.
+To achieve Web3，a host of internet services can be built and offered in a decentralized manner as well as metered and compensated with crypto tokens.
 
 Web3 enabling services include but are not limited to the following:
 - DFS：Decentralized File Storage
 - DCOMP: Decentralized Computing Resources (E.g. VM leasing for application running）
-- DNET: Decentralized Networking, including traffic distribution/forwarding and routing etc.
+- DNET: Decentralized Networking, including traffic distribution/forwarding and routing, etc.
 - DCDN: Decentralized CDN Service
 - DDNS: Decentralized DNS Service
 - DID: Decentralized Identity Service
