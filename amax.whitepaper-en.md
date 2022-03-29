@@ -108,15 +108,15 @@ With multiple chains co-existing in Armonia's multichain universe, there will be
 
 ### Cross-chain mechanism
 
-In Armonia's multichain universe, the ability of "moving" an asset from one chain to another can be critical for many users or asset owners. If the originating asset resides in its home chain whereby the assets are issued from, "moving" the asset means locking an asset in the oringating chain and minting the assets from the destination chain and trasferring the assets to the desginated account. But if the orignating asset resides in non-native chain, "moving" the asset means destroying or burning the asset from the originating chain and unlocking the asset and sending back to the designated account from the home chain to the asset. This two-way moving activities that happen between either two chains within Armonia's multichain universe are so-called cross-chain transactions. 
+In Armonia's multichain universe, the ability of "moving" an asset from one chain to another can be critical for many users or asset owners. If the originating asset resides in its home chain whereby the assets are issued from, "moving" the asset means locking an asset in the oringating chain and minting the assets from the destination chain and trasferring the assets to the desginated account. However, if the orignating asset resides in non-native chain, "moving" the asset means destroying or burning the asset from the originating chain, unlocking the asset and sending the designated account from the home chain to the asset. This two-way moving activities that happen between either two chains within Armonia's multichain universe are so-called cross-chain transactions. 
 
-Through cross-chain tranasctions, asset owner can move asset from one chain to another, which greatly increase the liqudity and usability of the asset. Meanwhile, it can suffice all kinds of application scenarios that are happening in the entire ecosystem.
+Through cross-chain tranasctions, asset owner can move asset from one chain to another, which greatly increase the liqudity and usability of the asset. Meanwhile, it suffices all kinds of application scenarios that happen in the entire ecosystem.
 
 However, following problems must be solved in order to achieve bi-directionary, reliable and efficient cross-chain transactions:
-- how to ensure the finality of asset moving transactions onchain?
+- how to ensure the finality of the asset-moving transactions onchain?
 - how to synchronize the asset moving result from one chain to another?
-- how to ensure transactions invovled in cross-chain workflow are effective and accurate?
-- how to prevent malicous users from stealing away the asset during the cross-chain transactions?
+- how to ensure transactions involved in cross-chain workflow are effective and accurate?
+- how to prevent malicous users from stealing away the assets during the cross-chain transactions?
 - how to prevent the mirroring asset from being overly inflated?
   
 At the same time, one important question that remains to be answered is:
