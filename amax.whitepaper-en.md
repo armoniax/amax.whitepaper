@@ -135,7 +135,7 @@ By addressing the above problems，one hybrid and reliable cross-chain solution 
 | cross-chain asset | `AS` |
 | DAO for asset-mirrored chain | `DAO` |
 
-Note: Distribution of assets from `A` chain has been determined by its consenus mechanism, tokenomics and ecosystem. Howver, asset to be mirrored to its destination chain `B` must be managed within a `ERC20` token contract for its issue, mint, transfer and burn etc activities and these will be governed by its `DAO` body.
+Note: Distribution of assets from `A` chain has been determined by its consensus mechanism, tokenomics and ecosystem. However, asset to be mirrored to its destination chain `B` must be managed within a `ERC20` token contract for its issuing, minting, transferring, burning, etc. and these activities will be governed by its `DAO` body.
 
 * Preparation work
 1. Deploy a smart contract `amax.xswap` onto `M` chain for cross-chain management;
