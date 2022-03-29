@@ -217,11 +217,11 @@ With more backup nodes to participate, even though each backup node might get fe
 The following diagram demonstrates what `AMC` shall look like with the number of backup chains increasing:
 <img src="./assets/apos_main_vice_subchain_en" width=800 />
 
-Last but not least, voting for mining node election will not start in the first year since its inception as `AMC` chain will be under fast-pace development and will upgrade its mode. Therefore, the orignal 21 main nodes will not yield any new `AMAX` token upon each block production. The voting is expected to be open to the public after passing `v1.0` milestone and new tokens will be minted/inflated after all staked and voted `AMAX` tokens reach more than 5% of the total supply.
+Last but not least, the vote for mining node election will not start in the first year since its inception as `AMC` chain will be under fast-pace development and will upgrade its mode. Therefore, the orignal 21 main nodes will not yield any new `AMAX` token upon each block production. The voting is expected to be open to the public after passing `v1.0` milestone and new tokens will be minted/inflated after all staked and voted `AMAX` tokens reach more than 5% of the total supply.
 
 ### Account
 
-Rather than utilize public-key derived address to denote each account, `AMC` adopts account model based on account name. One account can be bound with from one to multiple public keys and the key requires its owner to register/activate it before any transaction could be made within the account. Each account name is composed of 12 alphanumeric characters ([`1-5`,`a-z`,`.`]) and can be extended to support 24 such characters ([`1-9`,`a-z`,`.`,`#`,`@`]). Account owners must stake a certain amount of `$AMAX` tokens for reserving a ccertain amount of system RAM, CPU, network and other resources in order to particate in all kinds of transactions.
+Rather than utilize public-key derived address to denote each account, `AMC` adopts account model based on account name. One account can be bound with from one to multiple public keys and the key requires its owner to register/activate it before any transaction could be made within the account. Each account name is composed of 12 alphanumeric characters ([`1-5`,`a-z`,`.`]) and can be extended to support 24 such characters ([`1-9`,`a-z`,`.`,`#`,`@`]). Account owners must stake a certain amount of `$AMAX` tokens for reserving a certain amount of system RAM, CPU, network and other resources in order to particate in all kinds of transactions.
 
 ## First Armonia-child-chain
 In order to embrace the largest crypto ecosystem in the current world, Armonia's first child chain will stay 100% comptiable with Ethereum and their cloned chains. Its main features are:
@@ -325,9 +325,9 @@ Following basic `DAOs` will be founded:
 ## Technology roadmap
 
 Technology roadmap:
-- v1.0：Armonia meta chain (WASM based) and the first child chain (EVM based) to be successfuly launched, with meta chain supporting `APOS` consensus algorithm and providing two-way cross-chain ability between `AMC` and the first child chain;
+- v1.0：Armonia meta chain (WASM based) and the first child chain (EVM based) successfuly launched, with meta chain supporting `APOS` consensus algorithm and providing two-way cross-chain ability between `AMC` and the first child chain;
 - v2.0：enable web3.0 resource mining and provide SDK for interfacing with web3 resources;
-- v3.0：provide layer0-base, layer-0, layer-1 etc template implementation to enalbe rapid blockchain development;
+- v3.0：provide layer0-base, layer-0, layer-1, etc. template implementation to enable rapid blockchain development;
 
 After Armonia `v3.0` has been achieved, all development will be driven by `developer dao`.
 
