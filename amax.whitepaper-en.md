@@ -174,11 +174,11 @@ The detailed workflow diagram:
 
 ### Consensus algorithm
 
-As the founding chain in Armonia's multichain network, `AMC` serves as the trust anchor and value engine to all other spawned child chains. For those who adopt `$AMAX` as the native token of their own chains for basic functions like transaction fees. Hence, it is crticial to ensure the security and reliability of Armonia meta chain. It means there should be a sufficient level of decentralization and anti-censoship capability as described as follows:
+As the founding chain in Armonia's multichain network, `AMC` serves as the trust anchor and value engine to all the other spawned child chains. For those who adopt `$AMAX` as the native token of their own chains for basic functions like paying transaction fees, it is crticial to ensure the security and reliability of Armonia meta chain. It means there should be a sufficient level of decentralization and anti-censorship capability as described as follows:
 
-1. There should be enough copies of blockchain data maintained by mining nodes such that even if there were direct attacks to the mining nodes the network can still survive and operate and eventually return to a good working state;
-2. When there were vicious nodes trying to sabotage the network, the activities can be discovered and even corrected as long as the total number of bad actors are below 1/3 of the total set of validators;
-3. Those mining nodes can be replaced by standby nodes when they are not on their duty.
+1. There should be enough copies of blockchain data maintained by mining nodes so that even if the mining nodes are under direct attack, the network can still survive, operate and eventually return to stable working state;
+2. When there are vicious nodes trying to sabotage the network, the activities can be discovered and even corrected as long as the total number of bad actors is below 1/3 of the total set of validators;
+3. Those mining nodes can be replaced by standby nodes when off-duty.
 
 Armonia has invented a new consensus algorithm which is named as Armonia DPOS or short as APOS for `AMC` chain, the mother chain and the other child chains can adopt their own consensus algorithm to secure their network.
 
