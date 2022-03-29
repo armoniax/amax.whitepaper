@@ -59,7 +59,7 @@ Armonia, as a multichain platform, has adopted a unique mother-child-chain model
 **Core design**：
 - `AMC` adopts an innovative consensus algorithm called `APOS` and high-performant WASM virtual machine, requiring extremely low transaction cost. `AMC` also adopts account name instead of address based onchain addressing model;
 - `ACC` chains can be built with layer-0 & layer-1 template modules in a very quick manner;
-- Other public chains like Bitcoin or Ethereum can be also included in the multichain environment to co-exist with other `ACC` chains;
+- Other public chains like Bitcoin or Ethereum can also be included in the multichain environment to co-exist with other `ACC` chains;
 - All chains within Armonia multichain environment can mirror or bridge their assets from one to another;
   
 ### Multichain model
