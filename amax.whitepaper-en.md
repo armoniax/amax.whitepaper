@@ -53,13 +53,13 @@ Armonia is a mother-child multichain blockchain platform, wherein there's Armoni
 - Simply：Avoiding any form of over-design and over-implementation as long as the core objectives can be met. Only through this can the entire network achieve overall security, reliability and agility.
 
 ## Overall architecture
-Armonia as a multichain platform has adopted a unique mother-children-chain model，instead of star-like models which have been adopted in other multichain technology like cosmos or polkadot：
+Armonia, as a multichain platform, has adopted a unique mother-child-chain model，instead of star-like models which have been adopted in many other multichain technology like Cosmos or Polkadot：
 <img src="./assets/Armonia-Multichain-Arch_en.png" width=800 />
 
 **Core design**：
-- `AMC` adopts an innovative consensus algorithm called `APOS` and high-performant WASM virtual machine and requires extremely low transaction cost. `AMC` also adopts account name instead of address based onchain addressing model;
+- `AMC` adopts an innovative consensus algorithm called `APOS` and high-performant WASM virtual machine, requiring extremely low transaction cost. `AMC` also adopts account name instead of address based onchain addressing model;
 - `ACC` chains can be built with layer-0 & layer-1 template modules in a very quick manner;
-- Other public chains like Bitcoin or Ethereum can be also included into the multichain environment to co-exist with other `ACC` chains;
+- Other public chains like Bitcoin or Ethereum can be also included in the multichain environment to co-exist with other `ACC` chains;
 - All chains within Armonia multichain environment can mirror or bridge their assets from one to another;
   
 ### Multichain model
