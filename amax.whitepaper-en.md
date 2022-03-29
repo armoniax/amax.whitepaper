@@ -183,15 +183,15 @@ As the founding chain in Armonia's multichain network, `AMC` serves as the trust
 Armonia has invented a new consensus algorithm, named as Armonia DPOS, or short for APOS, for `AMC` chain, the mother chain and the other child chains can adopt their own consensus algorithm to protect their network.
 
 The construction of APOS is as follows:
-1. All network nodes that run `AMC` node software can participate in block production for both main and vice blocks that form `AMC` main and backup chain(s);
-2. Those nodes that are elected through a non-stop voting process and ranked top `21` in the list become the mainnode and the rest `10,000` nodes are the backup nodes; 
+1. All network nodes that run `AMC` node software can participate in block production for both main and blocks that form `AMC` main and backup chain(s);
+2. The nodes elected through a non-stop voting process and rank top `21` in the list become the main nodes and the rest `10,000` nodes are the backup nodes; 
 3. The voting process requires the candidate nodes to stake a certain amount of `AMAX` tokens in order to receive votes from the Armonia community; 
 4. The other nodes neither in the main nor backup node list are called observer nodes;
-5. The main nodes take turns according to VRF algorithm to produce the main blocks and receive newly inflated `AMAX` tokens;
-6. The backup nodes also take turns accoring to VRF algorithm but are applied in a much larger quorum (10,0000 nodes for one backup chain) and each backup block mined will reward the miner a certain amount of `AMAX` tokens; the backup block must refer to the latest main block being produced by the main node.
+5. The main nodes take turns according to VRF algorithm to produce main blocks and receive newly inflated `AMAX` tokens;
+6. The backup nodes also take turns according to VRF algorithm but are applied in a much larger quorum (10,0000 nodes for one backup chain) and each backup block mined will reward the miner a certain amount of `AMAX` tokens; the backup block must refer to the latest main block being produced by the main node;
 7. The main nodes shall include backup blocks during generating a main block and will be rewarded for correctly including a good bakup block;
-8. When a bad backup block is included into the main block, it will not be accepted by the whole network and thus discarded by other nodes;
-9. When a main blocked is missed or faulty, the backup block will repace the main block to become the actual main block and the producer node thus receives main block reward;
+8. When a bad backup block is included in the main block, it will not be accepted by the whole network and thus discarded by other nodes;
+9. When a main blocked is missing or faulty, the backup block will replace the main block to become the actual main block and the producer node thus receives main block reward;
 10. The finality of main blocks is determined through implementation of `aBFT` algorithm. However the finality of backup blocks are determined by the main blocks;
 11. Transactions with main blocks must be not only verified but also executed to update the corresponding global state for the network; However, the backup blocks are only required to be verified in order to be accepted by the whole network. This way it avoids the double-spending problem and allows for the nodes to conduct parallel processing for both main and backup blocks;
 12. To prevent those greedy but lazy nodes from cheating the network by producting empty or useless blocks that include useless fabricated transactions, the reward to the backup nodes for producing backup blocks will be corresponding to the simliarity of block transactions compared to those in the main blocks at the same height. Therefore, it also means the reward will be only calculated and settled in the next block height;
