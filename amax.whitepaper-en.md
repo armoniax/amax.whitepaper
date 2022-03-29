@@ -91,11 +91,11 @@ It means that one user can intiate a blockchain transaction that can reach one s
 <img src="./assets/tx_multichain_network.png" width=800 />
 
 ### Multichain enabled applicaiton scenariors
-In Armonia's multichain empowered ecosystem, numerous application scenarios can be built including the following:
+In Armonia's multichain empowered ecosystem, numerous application scenarios can be built, including the following:
 - issue, mint, transfer and exchange all sorts of crypto assets in `AMC` chain;
 - build incentive mining pools in `AMC` to promote Armonia ecosystem development;
-- complete KYC/KYB for `AMC` accounts in order to access those smart contracts that have regulation compilance requirements;
-- create one or mulitple DEX `ACC` chains to support order-book based exchange with high-performance and low-laytency capabilities;
+- complete KYC/KYB for `AMC` accounts in order to access smart contracts that have regulation compilance requirements;
+- create one or mulitple DEX `ACC` chains to support order-book based exchangeS with high-performanT and low-latency capabilities;
 - create one or multiple prediction `ACC` chains to achieve both performance and privacy;
 - create one or mulitple GameFi, NFT and metaverse application chains;
 
