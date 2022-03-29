@@ -196,9 +196,9 @@ The construction of APOS is as follows:
 11. Transactions with main blocks must be not only verified but also executed to update the corresponding global state for the network, while the backup blocks are only required to be verified in order to be accepted by the whole network. In this way, it avoids double-spending problem and allows for the nodes to conduct parallel processing for both main and backup blocks;
 12. To prevent greedy but lazy nodes from cheating the network by producting empty or useless blocks that include useless fabricated transactions, reward to the backup nodes for producing backup blocks will correspond with the simliarity of block transactions compared to those in the main blocks at the same height. Therefore, the reward will only be calculated and settled in the next block height;
 
-The interwoven main and backup `AMC` chains can have following block generation scenariors:
+The interwoven main and backup `AMC` chains may have following block generation scenarios:
 
-- In general the main and backup blocks are interwoven as following:
+- In general the main and backup blocks are interwoven as follows:
 <img src="./assets/apos-normal.png" width=800 />
 
 - One Armonia main node produces 6 blocks in a row before shifting to other main nodes but backup nodes shift each time after producing only one backup block:
@@ -207,7 +207,7 @@ The interwoven main and backup `AMC` chains can have following block generation 
 - If the on-duty backup node couldn't produce the block of a timeslot, the next main block won't include the backup block:
 <img src="./assets/apos_vicenode_fail.png" width=800>
 
-- If the on-duty main node couldn't produce the block of a timeslot, the next (`n+1`) main block will take the current backup block as the main block and its producing node will be rewarded with main block reward amount. However the prior (`n'-1`) backup block will be thus not rewarded as no main block is including it:
+- If the on-duty main node couldn't produce the block of a timeslot, the next (`n+1`) main block will take the current backup block as the main block and its producing node will be rewarded with the amount of main block reward. However, the prior (`n'-1`) backup block won't be rewarded as no main block is included:
 <img src="./assets/apos_mainnode_fail.png" width=800>
 
 To summarize, for `AMC` chain, it can be composed of one main chain and one to several backup chains that involves in total `21 + 10,000 * n` number of mining nodes. Unlike a pure DPOS consensus algorithm that rewards cadidate nodes not even running the node software, APOS only rewards those that run the node software, synchronize with the network and actually produce either main or backup blocks. This way, it greatly improves the overall security of `AMC` chain.
