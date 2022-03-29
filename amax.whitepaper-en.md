@@ -268,22 +268,22 @@ The overall allocation of `$AMAX` tokens are as follows:
 
 ### Mining of Things (MoT)
 
-It is in Armonia's belief that every activity that helps to add value to the entire Armonia ecosystem and community shall be rewarded and mining is a good way to support the activities and rewarding to be conducted in smart-contract based mining pools.
+It is in Armonia's belief that every activity that helps to add value to the entire Armonia ecosystem and community shall be rewarded while mining is a good way to support the activities and is rewarding to be conducted in smart-contract based mining pools.
 
-In general following types of mining pools are existing:
+In general, following types of mining pools exist:
 |Mining category|Mining Ratio (`$AMAX`)| Description |
 |---|---|---|
 |Blockchain development Mining | 30% |15%: for achiving milestone development: `v1.0`, `v2.0`和`v3.0`; Afterwards, 15%: `DAO` driven development |
 |Main-blocks mining | 5% | halving every 30 months | 
 |Backup-blocks mining | 5% | ditto |
-|Web3 mining | 10% | to reward those who providing web3 resources |  
+|Web3 mining | 10% | to reward those who provide web3 resources |  
 |Ecosystem development mining| 25% | any other beneficiary activities to the ecosystem development |
 
-The ecosystem development mining activities can include but are not limited to the following:
-- registration of accounts and inviting other users to register their accounts
-- provide KYC/KYB service and cerity the accounts onchain
+The ecosystem development mining activities include but are not limited to the following:
+- registration of accounts and invitation to other users to register their accounts
+- provide KYC/KYB service and verify the accounts onchain
 - provide other kinds of oracle services
-- cross some main assets over from other well-know blokchains
+- transfer some main assets over from other well-known blokchains
 
 ## Infrasturcture support for We3
 To achieve Web3，it means a host of internet services can be built and offered in a decentralized manner as well as metered and compensated with crypto tokens.
