@@ -180,9 +180,9 @@ As the founding chain in Armonia's multichain network, `AMC` serves as the trust
 2. When there are vicious nodes trying to sabotage the network, the activities can be discovered and even corrected as long as the total number of bad actors is below 1/3 of the total set of validators;
 3. Those mining nodes can be replaced by standby nodes when off-duty.
 
-Armonia has invented a new consensus algorithm which is named as Armonia DPOS or short as APOS for `AMC` chain, the mother chain and the other child chains can adopt their own consensus algorithm to secure their network.
+Armonia has invented a new consensus algorithm, named as Armonia DPOS, or short for APOS, for `AMC` chain, the mother chain and the other child chains can adopt their own consensus algorithm to protect their network.
 
-The constructs of APOS is as follows:
+The construction of APOS is as follows:
 1. All network nodes that run `AMC` node software can participate in block production for both main and vice blocks that form `AMC` main and backup chain(s);
 2. Those nodes that are elected through a non-stop voting process and ranked top `21` in the list become the mainnode and the rest `10,000` nodes are the backup nodes; 
 3. The voting process requires the candidate nodes to stake a certain amount of `AMAX` tokens in order to receive votes from the Armonia community; 
