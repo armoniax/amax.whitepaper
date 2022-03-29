@@ -143,14 +143,14 @@ Note: Distribution of assets from `A` chain has been determined by its consensus
 3. Deploy a smart contract `as_erc20` onto `B` for issuing, minting and destroying mirrored assets, governed by its DAO body.
 
 * Workflow
-1. `BO` approaches `DAO` and request for briding assets from `B`, say 1 mn `AS` and sends them into `as_custody`. Then `DAO` mints 1 mn AS from `as_erc20` and transfer them to `BO`;
+1. `BO` approaches `DAO`, requests bridging assets from `B`, say 1 mn `AS`, and sends them into `as_custody`. Then, `DAO` mints 1 mn AS from `as_erc20` and transfers them to `BO`;
 2. `BO` places orders on `amax.xswap` with `$AMAX` as escrow that is locked into the same contract;
-3. `BU` finds the orders from `amax.xswap` they want to take and they can take them partially or whoely;
-4. `BU` sends `AS` from `A` chain to `BO`'s account and posts its transaction ID to `amax.xswap` as a matter of payment proof;
-5. `BO` sends `AS` from `B` chain to `BU`'s account upon notification of order status change and close the order with `BU`'s confirmation;
+3. `BU` finds the orders they want to take from `amax.xswap` and they can take them partially or entirely;
+4. `BU` sends `AS` from `A` chain to `BO`'s account and posts its transaction ID to `amax.xswap` as payment proof;
+5. `BO` sends `AS` from `B` chain to `BU`'s account upon notification of order status change and closes the order with `BU`'s confirmation;
    
 Note:
-1. when there's any dispute about swap orders, `DAO` will be invovled to do the arbitrage to ensure the complete clousure of the orders;
+1. when there's any dispute about swap orders, `DAO` will be involved to do the arbitrage to ensure the complete closure of the orders;
 2. `AMC` can be also `A` or `B` chain.
 
 The detailed workflow diagram:
