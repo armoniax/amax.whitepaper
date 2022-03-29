@@ -212,12 +212,12 @@ The interwoven main and backup `AMC` chains may have following block generation 
 
 To summarize, for `AMC` chain, it can be composed of one main chain or one to several backup chains that involves in total `21 + 10,000 * n` number of mining nodes. Unlike a pure DPOS consensus algorithm that rewards candidate nodes that don't run the node software, APOS only rewards those that run the node software, synchronize with the network and actually produce main or backup blocks. This way, it greatly improves the overall security of `AMC` chain.
 
-With more backup nodes to participate, even though each backup node might get fewer chances to mine a block and thus mine fewer `AMAX`s, the overall network security and community consensus are enhanced, which would eventually contribute to `AMAX` token value. This would encourage more users to particate and further increase the awareness of the project. As for the number of backup chains, it can be decided through DAO governance body.
+With more backup nodes to participate, even though each backup node might get fewer chances to mine blocks and thus mine fewer `AMAX`s, the overall network security and community consensus will be enhanced, which would eventually contribute to `AMAX` token value. This would encourage more users to particate and further increase the awareness of the project. As for the number of backup chains, it can be decided by DAO governance body.
 
 The following diagram demonstrates what `AMC` shall look like with the number of backup chains increasing:
 <img src="./assets/apos_main_vice_subchain_en" width=800 />
 
-Last but not least, voting for mining node election will not start in the first year since its inception as `AMC` chain will be under fast-pace development and will upgrade its mode. Therefore, the orignal 21 main nodes will not yield any new `AMAX` token upon each block production. The voting is expected to be open to the public after passing `v1.0` milestone and new tokens will be newly minted/inflated after all staked and voted `AMAX` tokens reach more than 5% of the total supply.
+Last but not least, voting for mining node election will not start in the first year since its inception as `AMC` chain will be under fast-pace development and will upgrade its mode. Therefore, the orignal 21 main nodes will not yield any new `AMAX` token upon each block production. The voting is expected to be open to the public after passing `v1.0` milestone and new tokens will be minted/inflated after all staked and voted `AMAX` tokens reach more than 5% of the total supply.
 
 ### Account
 
