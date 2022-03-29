@@ -317,10 +317,10 @@ For a `DAO` body, the common governnance workflow is as follows:
 - `DAO` body may review and confirm the execution result.
   
 Following basic `DAOs` will be founded:
-- Developers DAO: It guides the blockchain technology development, including blockhcain feature upgrade and bug fixes, with preallocated incentive tokens to reward the contributors;
-- Miners DAO: Once `AMC` chain has been activited for inflation, each mined block contains a certain amount of infalted `AMAX` token to reward the miners. It is the miners DAO to cordinate among the miners for ensurign network security. E.g. how many backup chains shall be supported to include as many miners as possible;
-- AMAX DAO: to govern the issuance, minting and buring of `AMAX` tokens;
-- `MoT` DAO: Mining of things governance body to determine what minnig pools shall be created and how to reward the miners etc.
+- Developers DAO: It guides the blockchain technology development, including blockhcain feature upgrade and bug fix, with preallocated incentive tokens to reward the contributors;
+- Miners DAO: Once `AMC` chain has been activited for inflation, each mined block will contain a certain amount of inflated `AMAX` token to reward the miners. The miners DAO will coordinate among the miners for ensuring network security. E.g. how many backup chains shall be supported to include as many miners as possible;
+- AMAX DAO: to govern the issue, minting and burning of `AMAX` tokens;
+- `MoT` DAO: Mining of Things governance body to determine what mining pools shall be created, how to reward the miners, etc.
   
 ## Technology roadmap
 
