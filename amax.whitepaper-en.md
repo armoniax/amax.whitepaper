@@ -151,7 +151,7 @@ Note: Distribution of assets from `A` chain has been determined by its consensus
    
 Note:
 1. when there's any dispute about swap orders, `DAO` will be involved to do the arbitrage to ensure the complete closure of the orders;
-2. `AMC` can be also `A` or `B` chain.
+2. `AMC` can also be `A` or `B` chain.
 
 The detailed workflow diagram:
 
@@ -165,8 +165,8 @@ The detailed workflow diagram:
 |---|---|---|
 | Native token | `AMAX` | issued in system contract: **amax.token** |
 | Precision | 8 | the smallest unit is 1 of 100 million |
-| Total supply | 1,000,000,000 | Inflate/deflate via DAO to support ecossytem advancement |
-| Consenus algorithm | APOS | Armonia's DPOS |
+| Total supply | 1,000,000,000 | Inflate/deflate via DAO to support ecosystem advancement |
+| Consensus algorithm | APOS | Armonia's DPOS |
 | Virtual machine | WASM | High-performing VM |
 | anti-sybil attack | resource staking and leasing model with `$AMAX`| zero gas fees | 
 | Block interval | 1 sec | a fine choice between stability and transaction onchain speed |
