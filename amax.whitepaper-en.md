@@ -64,11 +64,11 @@ Armonia, as a multichain platform, has adopted a unique mother-child-chain model
   
 ### Multichain model
 
-With Armonia's layer-0 and layer-1 template software and SDK, one can rapidly build many versatile child chains that can have their uniqueness in consensus algorithm, block interval, virtual machine and finality choices...etc, so that they can meet various needs from the ecosystem.
+With Armonia's layer-0 and layer-1 template software and SDK, one can rapidly build many versatile child chains with their uniqueness in consensus algorithm, block interval, virtual machine and finality choices, etc. so that they can meet various needs from the ecosystem.
 
-Armonia Child Chain or `ACC` can have their own native tokens or directly utilize `AMAX` which can be bridged from `AMC` chain. It is highly encouraged to implement `ACC` that runs on a gas model and utilizes `AMAX` for gas or transaction fees payment. In this way, all `ACC` chains will help to add values to `AMC` and thus the entire ecosystem.
+Armonia Child Chain or `ACC` can have their own native tokens or directly utilize `AMAX` which can be bridged from `AMC`. It is highly encouraged to implement `ACC` that runs on a gas model and utilizes `AMAX` for gas or transaction fee payment. In this way, all `ACC`s will help to add values to `AMC`, even the entire ecosystem.
 
-Basically every single blockchain can be highly abstracted or characterized as a capital letter T: the horizontal line stands for all transaction and block data which will be broadcasted throughout the network; the vertical line by contrast represents the state database (which includes account balance state) that will be only constructed after execution of transactions produced from the horizontal line. Further more, dotted line circle is to represent an open and public blockchain network while solid line circle is for private blockchains）`AMC` can serve as trust anchor to all other `ACC` chains which altogehter form the following multichain universe：
+Basically every single blockchain can be highly abstracted or characterized as the capital letter T: the horizontal line stands for all transaction and block data which will be broadcasted throughout the network; the vertical line represents the state database (which includes account balance state) that will only be constructed after execution of transactions produced from the horizontal line. Furthermore, dotted line circle is to represent an open and public blockchain network while solid line circle stands for private blockchains. `AMC` can serve as trust anchor to all other `ACC` chains. Altogehter, they form the following multichain universe：
 
 <img src="./assets/Armonia-Multichain-Forest_en.png" title="Armonia Multichain Universe" width=800 />
 
