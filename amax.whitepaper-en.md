@@ -174,7 +174,7 @@ The detailed workflow diagram:
 
 ### Consensus algorithm
 
-As the founding chain in Armonia's multichain network, `AMC` serves as the trust anchor and value engine to all the other spawned child chains. For those who adopt `$AMAX` as the native token of their own chains for basic functions like paying transaction fees, it is crticial to ensure the security and reliability of Armonia meta chain. It means there should be a sufficient level of decentralization and anti-censorship capability as described as follows:
+As the founding chain in Armonia's multichain network, `AMC` serves as the trust anchor and value engine to all the other spawned child chains. For those who adopt `$AMAX` as the native token of their own chains for basic functions like paying transaction fees, it is crticial to ensure the security and reliability of Armonia meta chain. It means sufficient decentralization and anti-censorship capability is needed, as described as follows:
 
 1. There should be enough copies of blockchain data maintained by mining nodes so that even if the mining nodes are under direct attack, the network can still survive, operate and eventually return to stable working state;
 2. When there are vicious nodes trying to sabotage the network, the activities can be discovered and even corrected as long as the total number of bad actors is below 1/3 of the total set of validators;
@@ -307,7 +307,7 @@ For a `DAO` body, the common governnance workflow is as follows:
 
 <img src="./assets/amax_dao_process_en.png" width=800 />
 
-- `DAO` body deployes the smart contract which is open sourced to all participates;
+- `DAO` body deployes the smart contract which is open sourced to all participants;
 - Members of `DAO` may be recruited through a certin process and registered with the `DAO` body but the public may also be able to join the body for its management activities;
 - Members may be distriubted with voting tokens according to the governance protocol;
 - Any member within `DAO` body can make proposals for particular subjects and allocate the funds to reward those who help fulfill the objectives. The funds may come from the member himself or from the `DAO` treasury reserve;
