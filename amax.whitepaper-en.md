@@ -192,9 +192,9 @@ The construction of APOS is as follows:
 7. The main nodes shall include backup blocks during generating a main block and will be rewarded for correctly including a good bakup block;
 8. When a bad backup block is included in the main block, it will not be accepted by the whole network and thus discarded by other nodes;
 9. When a main blocked is missing or faulty, the backup block will replace the main block to become the actual main block and the producer node thus receives main block reward;
-10. The finality of main blocks is determined through implementation of `aBFT` algorithm. However the finality of backup blocks are determined by the main blocks;
-11. Transactions with main blocks must be not only verified but also executed to update the corresponding global state for the network; However, the backup blocks are only required to be verified in order to be accepted by the whole network. This way it avoids the double-spending problem and allows for the nodes to conduct parallel processing for both main and backup blocks;
-12. To prevent those greedy but lazy nodes from cheating the network by producting empty or useless blocks that include useless fabricated transactions, the reward to the backup nodes for producing backup blocks will be corresponding to the simliarity of block transactions compared to those in the main blocks at the same height. Therefore, it also means the reward will be only calculated and settled in the next block height;
+10. The finality of main blocks is determined through implementation of `aBFT` algorithm. However, the finality of backup blocks is determined by the main blocks;
+11. Transactions with main blocks must be not only verified but also executed to update the corresponding global state for the network, while the backup blocks are only required to be verified in order to be accepted by the whole network. In this way, it avoids double-spending problem and allows for the nodes to conduct parallel processing for both main and backup blocks;
+12. To prevent greedy but lazy nodes from cheating the network by producting empty or useless blocks that include useless fabricated transactions, reward to the backup nodes for producing backup blocks will correspond with the simliarity of block transactions compared to those in the main blocks at the same height. Therefore, the reward will only be calculated and settled in the next block height;
 
 The interwoven main and backup `AMC` chains can have following block generation scenariors:
 
