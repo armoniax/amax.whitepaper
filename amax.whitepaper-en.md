@@ -221,7 +221,7 @@ Last but not least, voting for mining node election will not start in the first 
 
 ### Account
 
-Rather than utilize public-key derived address to denote each account, `AMC` adopts account model based on account name. One account can be bound with from one to multiple public keys and the key requires its owner to register/activate it before any transaction could be made within the account. Each account name is composed of 12 alphanumeric characters ([`1-5`,`a-z`,`.`]) and can be extended to support 24 such characters ([`1-9`,`a-z`,`.`,`#`,`@`]) Account owners must stake a certain amount of `$AMAX` tokens for reserving a ccertain amount of system RAM, CPU, network and other resources in order to particate in all kinds of transactions.
+Rather than utilize public-key derived address to denote each account, `AMC` adopts account model based on account name. One account can be bound with from one to multiple public keys and the key requires its owner to register/activate it before any transaction could be made within the account. Each account name is composed of 12 alphanumeric characters ([`1-5`,`a-z`,`.`]) and can be extended to support 24 such characters ([`1-9`,`a-z`,`.`,`#`,`@`]). Account owners must stake a certain amount of `$AMAX` tokens for reserving a ccertain amount of system RAM, CPU, network and other resources in order to particate in all kinds of transactions.
 
 ## First Armonia-child-chain
 In order to embrace the largest crypto ecosystem in the current world, Armonia's first child chain will stay 100% comptiable with Ethereum and their cloned chains. Its main features are:
@@ -239,9 +239,9 @@ In order to embrace the largest crypto ecosystem in the current world, Armonia's
 
 ## Tokenomics
 
-Armonia meta chain has her native token `$AMAX` which is not only a source of power to all activities on `AMC` but can also serve child chains and even become their native token when chosen so by the child chains.
+Armonia meta chain has its native token `$AMAX` which is not only a source of power to all activities on `AMC` but can also serve child chains and even become their native token when chosen so by the child chains.
 
-The total supply of `$AMAX` is 1 billion and there's no systematic inflation. But Armonia `DAO` can decide whether to inflate `$AMAX` to make the ecosystem even more successful.
+The total supply of `$AMAX` is 1 billion and there won't be any systematic inflation. Armonia `DAO` can decide whether to inflate `$AMAX` to make the ecosystem even more successful.
 
 
 ### Token distribution
