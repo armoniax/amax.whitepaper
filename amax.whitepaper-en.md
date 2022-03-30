@@ -231,7 +231,7 @@ In order to embrace the largest crypto ecosystem in the current world, Armonia's
 | Native token | `AMAX` | bridged from `AMC` chain |
 | Consensus algorithm | PoSA |  |
 | Virtual machine | EVM | support solidity language for its smart contract development |
-| Anti-sybil attack | Gas for transaction fees, paid in `$AMAX` | `Gas fees = Gas amount x Gas price` |
+| Anti-sybil attack | Gas fees, paid in `$AMAX` | `Gas fees = Gas amount x Gas price` |
 | Account model | public key derived addresses | Format: `0x...` |
 | Block interval | 3 seconds | |
 | TPS | 160+ | Benchmarked with transfer transactions, `v1.0` ｜
