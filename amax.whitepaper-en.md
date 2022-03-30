@@ -114,8 +114,8 @@ Through cross-chain tranasctions, asset owner can move asset from one chain to a
 
 However, following problems must be solved in order to achieve bi-directionary, reliable and efficient cross-chain transactions:
 - how to ensure the finality of the asset-moving transactions onchain?
-- how to synchronize the asset moving result from one chain to another?
-- how to ensure transactions involved in cross-chain workflow are effective and accurate?
+- how to synchronize the asset transferring or locking result from one chain to another?
+- how to ensure transactions involved in cross-chain workflow are effective and accurate as expected?
 - how to prevent malicous users from stealing away the assets during the cross-chain transactions?
 - how to prevent the mirroring asset from being overly inflated?
   
