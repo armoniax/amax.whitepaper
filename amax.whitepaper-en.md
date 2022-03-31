@@ -87,8 +87,8 @@ Furthermore, Armonia will provide layer-0, layer-1 template components and their
 As the common building block for layer-0 in Armonia SDK, it serves to support three types of transaction routing in the Armonia multichain system: 1) unicast; 2) multicast; 3) broadcast:
 <img src="./assets/tx_multichain_comm_en.png" width=800 />
 
-It means that one user can initiate a blockchain transaction that can reach one single chain or a group of prescribed chains or even to every chain within the Armonia multichain network. It may be helpful or even critical in a coordinated operation in the multichain network. Notwithstanding the foregoing, when there is any chain-level issue like lack of gas fees that may cause transaction execution failure or, an inconsistent behavior could be created, leading to various chains being targeted by the transaction then this problem will need to be addressed at the application level.
 
+It means that one user can intiate a blockchain transaction that can reach one single chain or a group of prescribed chains or even every chain within Armonia multichain network. This routing capability can be useful or even critical in some coordinated operations in the multichain network. Notwithstanding the foregoing, when there is any chain-level issue like lack of gas fees that causes transaction failure, some inconsistencies among chains could be thus incurred. But this problem can be easily addressed at an application level like resending a transaction multiple times just to ensure its delivery and it shall have no harm onchain at all due to the idempotency nature of tranascations. 
 <img src="./assets/tx_multichain_network.png" width=800 />
 
 ### Multichain enabled application scenarios
@@ -109,14 +109,16 @@ With multiple chains co-existing in Armonia's multichain universe, there will be
 
 ### Cross-chain mechanism
 
-In Armonia's multichain universe, the ability of "moving" an asset from one chain to another can be critical for many users or asset owners. If the originating asset resides in its home chain where the assets are issued from, "moving" the asset means locking an asset in the originating chain and minting the assets from the destination chain and transferring the assets to the designated account. However, if the originating asset resides in a non-native chain, "moving" the asset means destroying or burning the asset from the originating chain, unlocking the asset and sending the designated account from the home chain to the asset. This two-way moving activities that happen between both two chains within Armonia's multichain universe are so-called cross-chain transactions. 
+
+In Armonia's multichain universe, the ability of "moving" an asset from one chain to another can be critical for asset owners. If the originating asset resides in its home chain whereby the assets are issued from, "moving" the asset means locking an asset in the oringating chain and minting the assets from the destination chain and trasferring the assets to the desginated account. However, if the orignating asset resides in non-native chain, "moving" the asset means destroying or burning the asset from the originating chain, unlocking the asset and sending the designated account from the home chain to the asset. This two-way moving activities that happen between any two chains within Armonia's multichain universe are cross-chain transactions. 
+
 
 Through cross-chain transactions, asset owner can move an asset from one chain to another, which greatly increases the liquidity and usability of the asset. This flexibility can help satisfy all kinds of application scenarios that happen in the entire ecosystem.
 
 However, the following problems must be solved to achieve bi-directional, reliable and efficient cross-chain transactions:
 - how to ensure the finality of the asset-moving transactions onchain?
-- how to synchronize the asset moving result from one chain to another?
-- how to ensure transactions involved in cross-chain workflow are effective and accurate?
+- how to synchronize the asset transferring or locking result from one chain to another?
+- how to ensure transactions involved in cross-chain workflow are effective and accurate as expected?
 - how to prevent malicious users from stealing the assets during the cross-chain transactions?
 - how to prevent the mirroring asset from being overly inflated?
   
@@ -231,9 +233,9 @@ To embrace the largest crypto ecosystem in the current world, Armonia's first ch
 |---|---|---|
 | Native token | `$AMAX` | Bridged from `AMC` chain |
 | Consensus algorithm | PoSA |  |
-| Virtual machine | EVM | Support solidity language for its smart contract development |
-| Anti-sybil attack | Gas for transaction fees, paid in `$AMAX` | `Gas fees = Gas amount x Gas price` |
-| Account model | Public key derived addresses | Format: `0x...` |
+| Virtual machine | EVM | support solidity language for its smart contract development |
+| Anti-sybil attack | Gas fees, paid in `$AMAX` | `Gas fees = Gas amount x Gas price` |
+| Account model | public key derived addresses | Format: `0x...` |
 | Block interval | 3 seconds | |
 | TPS | 160+ | Benchmarked with transfer transactions, `v1.0` ｜
 
