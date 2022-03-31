@@ -332,7 +332,7 @@ Technology roadmap:
 - v2.0：enable web3.0 resource mining and provide SDK for interfacing with web3 resources; and
 - v3.0：provide layer0-base, layer-0, layer-1, etc. template implementation to enable rapid blockchain development;
 
-After Armonia `v3.0` has been achieved, all development will be driven by the `developer DAO`.
+Note: After Armonia `v3.0` has been achieved, all development will be driven by the `developer DAO`.
 
 ## Core team
 
