@@ -4,29 +4,29 @@
 `v0.5`
 
 - [Armonia multichain blockchain platform](#armonia-multichain-blockchain-platform)
-  - [Introduction](#introduction)
-  - [Objectives & principles](#objectives--principles)
-  - [Overall architecture](#overall-architecture)
-    - [Multichain model](#multichain-model)
-    - [Multichain layered architecture](#multichain-layered-architecture)
-    - [Multichain transaction routing](#multichain-transaction-routing)
-    - [Multichain enabled application scenarios](#multichain-enabled-application-scenarios)
-    - [Cross-chain in Armonia's multichain universe](#cross-chain-in-armonias-multichain-universe)
-    - [Cross-chain mechanism](#cross-chain-mechanism)
-  - [Armonia Meta Chain](#armonia-meta-chain)
-    - [Basic profile](#basic-profile)
-    - [Consensus algorithm](#consensus-algorithm)
-    - [Account](#account)
-  - [First Armonia-child-chain](#first-armonia-child-chain)
-  - [Tokenomics](#tokenomics)
-    - [Token distribution](#token-distribution)
-    - [Mining of Things (MoT)](#mining-of-things-mot)
-  - [Infrastructure support for Web3](#infrastructure-support-for-web3)
-  - [xDAO governance](#xdao-governance)
-  - [Technology roadmap](#technology-roadmap)
-  - [Core team](#core-team)
-  - [Reference](#reference)
-## Introduction
+  - 1. [Introduction](#introduction)
+  - 2. [Objectives & principles](#objectives--principles)
+  - 3. [Overall architecture](#overall-architecture)
+    - i. [Multichain model](#multichain-model)
+    - ii. [Multichain layered architecture](#multichain-layered-architecture)
+    - iii. [Multichain transaction routing](#multichain-transaction-routing)
+    - iv. [Multichain enabled application scenarios](#multichain-enabled-application-scenarios)
+    - v. [Cross-chain in Armonia's multichain universe](#cross-chain-in-armonias-multichain-universe)
+    - vi. [Cross-chain mechanism](#cross-chain-mechanism)
+  - 4. [Armonia Meta Chain](#armonia-meta-chain)
+    - i. [Basic profile](#basic-profile)
+    - ii. [Consensus algorithm](#consensus-algorithm)
+    - iii. [Account](#account)
+  - 5. [First Armonia-child-chain](#first-armonia-child-chain)
+  - 6. [Tokenomics](#tokenomics)
+    - i. [Token distribution](#token-distribution)
+    - ii. [Mining of Things (MoT)](#mining-of-things-mot)
+  - 7. [Infrastructure support for Web3](#infrastructure-support-for-web3)
+  - 8. [xDAO governance](#xdao-governance)
+  - 9. [Technology roadmap](#technology-roadmap)
+  - 10. [Core team](#core-team)
+  - 11. [Reference](#reference)
+## 1. Introduction
 To address growing user application needs, blockchain technology has evolved distributed ledger, to smart contract technology that supports all sorts of application logic, through to providing layer-0 and layer-1 SDK technology for quickly building new blockchains, and building layer-2 to solve problems that couldn't be solved with layer-1 technology, as well as bi-directional cross-chain technology.
 
 However, to date, other than promoting security, reliability and decentralization, there hasn't been a single blockchain technology that can sufficiently meet the following requirements:
@@ -36,7 +36,7 @@ However, to date, other than promoting security, reliability and decentralizatio
   
 Armonia's founding team believes it takes a multichain blockchain platform technology to achieve the above objectives, which can then service every individual and business user globally. It is also Armonia's founding team's belief that the to-be-built metaverse will be a truly decentralized, open and multi-chain universe which harbors users, assets, transactions and smart-contract based, mission-critical DApps.
 
-## Objectives & Principles
+## ii. Objectives & Principles
 Armonia is a mother-child multichain blockchain platform, wherein there's Armonia Meta Chain (`AMC`) which is the mother chain to all other sovereign Armonia Child Chains (`ACC`). Armonia Meta Chain is designed to be highly secure, highly performant chain with very low even zero transaction fees. It also supports inter-blockchain bridging and mirroring of assets in order to support numerous DAPPs to be built on top of the platform. Under a multichain architecture, Armonia is poised to support at least one billion users worldwide.
 
 **Core objectives**
@@ -53,7 +53,7 @@ Armonia is a mother-child multichain blockchain platform, wherein there's Armoni
 - Personalized: the characteristics of the `ACC` chains can be tailored, whereby Armonia's multichain platform can support infinite kinds of demands from the over-laying ecosystem; and
 - Simply：as long as users core objectives can be met, Armonia’s multichain platform avoids any form of over-design or over-implementation to ensure the entire network maintains its overall security, reliability and agility.
 
-## Overall architecture
+## iii. Overall architecture
 As a multichain platform, Armonia has adopted a unique mother-child-chain model，as compared to star-like models which have been adopted in many other multichain technologies like Cosmos or Polkadot：
 <img src="./assets/Armonia-Multichain-Arch_en.png" width=800 />
 
@@ -63,7 +63,7 @@ As a multichain platform, Armonia has adopted a unique mother-child-chain model�
 - Other public chains like Bitcoin or Ethereum can also be included in the multichain environment to co-exist with other `ACC` chains; and
 - All chains within the Armonia multichain environment can mirror or bridge their assets from one to another.
   
-### Multichain model
+### i. Multichain model
 
 With Armonia's layer-0 and layer-1 template software and SDK, users can rapidly build many versatile child chains with their uniqueness in consensus algorithm, block interval, virtual machine and finality choices, etc., to meet the various needs of the ecosystem.
 
@@ -73,7 +73,7 @@ Basically, every single blockchain can be highly abstracted or characterized as 
 
 <img src="./assets/Armonia-Multichain-Forest_en.png" title="Armonia Multichain Universe" width=800 />
 
-### Multichain layered architecture
+### ii. Multichain layered architecture
 
 Armonia multichain system can be layered as follows:
 <img src="./assets/multichain-layered-arch.png" width=800 />
@@ -82,7 +82,7 @@ In this design, Armonia will provide layer-0 base components to service the tran
 
 Furthermore, Armonia will provide layer-0, layer-1 template components and their corresponding SDK so that ecosystem developers can quickly implement a blockchain system by choosing the ready blockchain building blocks with personalized configurations for each chain. In doing so, all child chains can easily interact with each other.
 
-### Multichain transaction routing
+### iii. Multichain transaction routing
 
 As the common building block for layer-0 in Armonia SDK, it serves to support three types of transaction routing in the Armonia multichain system: 1) unicast; 2) multicast; 3) broadcast:
 <img src="./assets/tx_multichain_comm_en.png" width=800 />
@@ -91,7 +91,7 @@ As the common building block for layer-0 in Armonia SDK, it serves to support th
 It means that one user can intiate a blockchain transaction that can reach one single chain or a group of prescribed chains or even every chain within Armonia multichain network. This routing capability can be useful or even critical in some coordinated operations in the multichain network. Notwithstanding the foregoing, when there is any chain-level issue like lack of gas fees that causes transaction failure, some inconsistencies among chains could be thus incurred. But this problem can be easily addressed at an application level like resending a transaction multiple times just to ensure its delivery and it shall have no harm onchain at all due to the idempotency nature of tranascations. 
 <img src="./assets/tx_multichain_network.png" width=800 />
 
-### Multichain enabled application scenarios
+### iv. Multichain enabled application scenarios
 In Armonia's multichain empowered ecosystem, numerous application scenarios can be built, including the following:
 - issue, mint, transfer and exchange all sorts of crypto assets in `AMC` chain;
 - build incentive mining pools in `AMC` to promote Armonia ecosystem development;
@@ -100,14 +100,14 @@ In Armonia's multichain empowered ecosystem, numerous application scenarios can 
 - create one or multiple prediction `ACC` chains to achieve both performance and privacy; and
 - create one or multiple GameFi, NFT and metaverse application chains;
 
-### Cross-chain in Armonia's multichain universe
+### v. Cross-chain in Armonia's multichain universe
 
 With multiple chains co-existing in Armonia's multichain universe, there will be interaction i.e. cross-chain activities between `AMC` and `ACC` chains as well as other public chains like Bitcoin and Ethereum. Armonia endeavors to build following cross-chain capabilities for blockchain users:
 
 <img src="./assets/armonia-multichain-scope_en.png" title="Armonia multichain and cross-chain relationship" width=800 />
 
 
-### Cross-chain mechanism
+### vi. Cross-chain mechanism
 
 
 In Armonia's multichain universe, the ability of "moving" an asset from one chain to another can be critical for asset owners. If the originating asset resides in its home chain whereby the assets are issued from, "moving" the asset means locking an asset in the oringating chain and minting the assets from the destination chain and trasferring the assets to the desginated account. However, if the orignating asset resides in non-native chain, "moving" the asset means destroying or burning the asset from the originating chain, unlocking the asset and sending the designated account from the home chain to the asset. This two-way moving activities that happen between any two chains within Armonia's multichain universe are cross-chain transactions. 
@@ -160,9 +160,9 @@ The detailed workflow diagram:
 
 <img src="./assets/armonia-cross-bridge_en.png" width=800 />
 
-## Armonia Meta Chain
+## 4. Armonia Meta Chain
 
-### Basic profile
+### i. Basic profile
 
 | Feature | Description | Notes |
 |---|---|---|
@@ -175,7 +175,7 @@ The detailed workflow diagram:
 | Block interval | 1 sec | A fine choice to balance stability and transaction onchain speed |
 | TPS | 5000+ | Benchmarked with transfer transaction, `v1.0` |
 
-### Consensus algorithm
+### ii. Consensus algorithm
 
 As the founding chain in Armonia's multichain network, `AMC` serves as the trust anchor and value engine to all the other spawned child chains. For those who adopt `$AMAX` as the native token of their own chains for basic functions like paying transaction fees, it is critical to ensure the security and reliability of Armonia meta chain. It means sufficient decentralization and anti-censorship capability is needed, as follows:
 
@@ -222,11 +222,11 @@ The following diagram depicts what `AMC` shall look like with the number of back
 
 Vote for mining node election will not start in the first year since its inception as `AMC` chain will be under fast-pace development and will upgrade its mode. Therefore, the original 21 main nodes will not yield any new `$AMAX` token upon each block production. Voting is expected to be open to the public after passing `v1.0` milestone and new tokens will be minted/inflated after all staked and voted `$AMAX` tokens reach more than 5% of the total supply.
 
-### Account
+### iii. Account
 
 Rather than utilize a public-key derived address to denote each account, `AMC` adopts an account model based on account name. One account can be bound with from one or multiple public keys and the key requires its owner to register/activate it before any transaction could be made within the account. Each account name is composed of 12 alphanumeric characters ([`1-5`,`a-z`,`.`]) and can be extended to support 24 such characters ([`1-9`,`a-z`,`.`,`#`,`@`]). Account owners must stake a certain amount of `$AMAX` tokens for reserving a certain amount of system RAM, CPU, network and other resources in order to particate in all kinds of transactions.
 
-## First Armonia-child-chain
+## 5. First Armonia-child-chain
 To embrace the largest crypto ecosystem in the current world, Armonia's first child chain will stay 100% compatible with Ethereum and their cloned chains. Its main features are:
 
 | Feature | Description | Memo |
@@ -240,14 +240,14 @@ To embrace the largest crypto ecosystem in the current world, Armonia's first ch
 | TPS | 160+ | Benchmarked with transfer transactions, `v1.0` ｜
 
 
-## Tokenomics
+## 6. Tokenomics
 
 Armonia meta chain has its native token `$AMAX` which is not only a source of power to all activities on `AMC` but can also serve child chains and even become their native token when chosen so by the child chains.
 
 The total supply of `$AMAX` is 1 billion and there won't be any systematic inflation. Armonia `DAO` can decide whether to implement inflation to `$AMAX` for the success of the ecosystem.
 
 
-### Token distribution
+### i. Token distribution
 
 The overall allocation of `$AMAX` tokens are as follows:
 
@@ -269,7 +269,7 @@ The overall allocation of `$AMAX` tokens are as follows:
 
 In total, there'll be 75% of `$AMAX`'s total supply used in mining activities within Armonia's ecosystem and it is regarded as "mining of things", meaning all value contributing to activities in the ecosystem can take the form of mining and participants can be rewarded with tokens including `$AMAX'.
 
-### Mining of Things (MoT)
+### ii. Mining of Things (MoT)
 
 It is in Armonia's belief that every value-added activity to the Armonia ecosystem and community shall be rewarded. Mining to be conducted in smart-contract based mining pools is a good mechanism to support the activities.
 
@@ -288,7 +288,7 @@ The ecosystem development mining activities include but are not limited to the f
 - provide other kinds of oracle services; and
 - transfer main assets from other well-known blockchains.
 
-## Infrastructure support for Web3
+## 7. Infrastructure support for Web3
 To achieve Web3，a host of internet services can be built and offered in a decentralized manner as well as metered and compensated with crypto tokens.
 
 Web3 enabling services include but are not limited to the following:
@@ -301,7 +301,7 @@ Web3 enabling services include but are not limited to the following:
 
 Armonia core team endeavors to build the above list of decentralized web3 services by effectively metering the health and usage of services with `$AMAX` as the main tokens to incentivize all contributors to web3 enablement.
 
-## xDAO governance
+## 8. xDAO governance
 In a world of decentralization, technologies and products need to be constantly discussed and improved, and the entire community needs to interact in order to decide how to appropriately incentivize those who contributes and if possible, to penalize those who create damages or do bad things to the ecosystem. It requires that both onchain and offchain activities take place in an orchestrated manner. It is of paramount importance to make sure this type of governance adheres to the decentralization principle by getting all the stakeholders within the ecosystem to freely participate by making proposals, voting/approving the proposal and execution both onchain and offchain.
 
 Therefore it is necessary to establish a decentralized autonomous organization or `DAO` to drive the overall development of Armonia ecosystem by steering the technology development and propelling community growth. As there can be infinite amount of topics, projects and efforts to be led by `DAO` bodies, there may also be interactions between these `DAO` bodies to achieve consensus on common topics or objectives. Hence, a top-level `DAO` that leads all the sub-level `DAO` bodies would be very important in guiding the development of `DAO` bodies. The top `DAO` is named as `Armonia xDAO`.
@@ -325,7 +325,7 @@ Following basic `DAOs` will be founded:
 - AMAX DAO: to govern the issuance, minting and burning of `$AMAX` tokens;
 - `MoT` DAO: Mining of Things governance body to determine what mining pools shall be created, how to reward the miners, etc.
   
-## Technology roadmap
+## 9. Technology roadmap
 
 Technology roadmap:
 - v1.0：Armonia meta chain (WASM based) and the first child chain (EVM based) successfully launched, with the meta chain supporting `APOS` consensus algorithm and providing two-way cross-chain ability between `AMC` and the first child chain;
@@ -334,11 +334,13 @@ Technology roadmap:
 
 Note: After Armonia `v3.0` has been achieved, all development will be driven by the `developer DAO`.
 
-## Core team
+## 10. Core team
 
-[Armonia to provide]
+A world-class blockchain research and development team with many years of experience in the blockchain industry. With in-depth participation in the research and development of multiple public blockchain projects, the team can quickly refine and integrate new technologies. 
 
-## Reference
+The operation team has in-depth experience in the cultural copyright transaction system, and has also independently developed different e-commerce model under the different business scenarios. The experience equipped the team with ability to better integrate traditional finance with the Armonia ecosystem and innovate. 
+
+## 11. Reference
 - metaverse: https://theconversation.com/the-metaverse-is-money-and-crypto-is-king-why-youll-be-on-a-blockchain-when-youre-virtual-world-hopping-171659
 - DPOS: https://steemit.com/dpos/@dantheman/dpos-consensus-algorithm-this-missing-white-paper
 - aBFT: https://hedera.com/learning/what-is-asynchronous-byzantine-fault-tolerance-abft
