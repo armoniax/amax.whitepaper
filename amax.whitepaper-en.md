@@ -37,7 +37,7 @@ However, other than promoting security, reliability and decentralization, there 
   
 Armonia's founding team believes it takes a multichain blockchain platform technology to achieve the above objectives, which can then service every individual and business user globally. It is also Armonia's founding team's belief that the to-be-built metaverse will be a truly decentralized, open and multi-chain universe which harbors users, assets, transactions and smart-contract based, mission-critical DApps.
 
-## ii. Objectives & Principles
+## 2. Objectives & Principles
 Armonia is a mother-and-child multichain blockchain platform, wherein Armonia Meta Chain (`AMC`) is the mother chain to all other sovereign Armonia Child Chains (`ACC`). AMC is designed to be highly secure and highly performant chain with very low or even zero transaction fees. It also supports inter-blockchain bridging and mirroring of assets capable of supporting numerous DAPPs to be built on top of the platform. Under a multichain architecture, Armonia is poised to support at least one billion users worldwide.
 
 **Core Objectives**
@@ -54,7 +54,7 @@ Armonia is a mother-and-child multichain blockchain platform, wherein Armonia Me
 - Personalized: the characteristics of the `ACC` chains can be tailored, whereby Armonia's multichain platform can support infinite kinds of demands from the over-laying ecosystem; and
 - Simply: Armonia's multichain platform avoids any form of over-design or over-implementation to ensure the entire network maintains its overall security, reliability and agility.
 
-## iii. Overall Architecture
+## 3. Overall Architecture
 As a multichain platform, Armonia has adopted a unique mother-and-child-chain model, as compared to the star-like models which have been adopted in many other multichain technologies like Cosmos or Polkadot:
 
 <img src="./assets/Armonia-Multichain-Arch_en.png" width=800 />
