@@ -5,9 +5,9 @@
 
 - [Armonia multichain blockchain platform](#armonia-multichain-blockchain-platform)
 
-  - 1. [Introduction](#introduction)
-  - 2. [Objectives & Principles](#objectives--principles)
-  - 3. [Overall Architecture](#overall-architecture)
+  - ## 1. [Introduction](#introduction)
+  - ## 2. [Objectives & Principles](#objectives--principles)
+  - ## 3. [Overall Architecture](#overall-architecture)
     - i. [Multichain Model](#multichain-model)
     - ii. [Multichain Layered Architecture](#multichain-layered-architecture)
     - iii. [Multichain Transaction Routing](#multichain-transaction-routing)
