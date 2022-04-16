@@ -45,7 +45,7 @@ Armonia is a mother-and-child multichain blockchain platform, wherein Armonia Me
 - `AMC` will issue a native token `$AMAX`, which will serve as the foundational value engine and trust anchor for the entire multichain based ecosystem;
 - To provide layer-0 and layer-1 blockchain template implementations and SDK which enables rapid blockchain creation and deployment for vertical application domain specific child chains that can inter-operate with `AMC` freely for asset mirroring and bridging;
 - `ACC` chains can be homogeneous chains or heterogeneous chains, public chains, private chains or alliance chains, etc., which can have their own choices and formation of consensus algorithm, virtual machine, block interval, finality and permission scope, etc. that determine a unique blockchain system;
-- After registering and staking escrow via the `AMC` chain, all distributed Internet resources (including distributed file storage, computing and networking, etc.) can be easily accessed and accurately metered. There will be various onchain charging models and open markets for all Web3.0 resources available throughout the Armonia network. The Armonia multichain platform can therefore become the cornerstone of the metaverse.
+- After registering and staking escrow via the `AMC` chain, all distributed Internet resources (including distributed file storage, computing and networking, etc.) can be easily accessed and accurately metered. There will be various onchain charging models and open markets for all `Web3.0` resources available throughout the Armonia network. The Armonia multichain platform can therefore become the cornerstone of the metaverse.
 
 **Design Principles**
 - Secure and reliable: to ensure `AMC` has a characteristic of being highly decentralized. Any malicious activities can be detected, corrected and penalized, if not avoided on a timely basis. Therefore, all assets onchain can be truly safe guarded；
@@ -277,7 +277,7 @@ In general, the following types of mining pools exist:
 |Blockchain development mining | 30% |15%: for achieving milestone development: `v1.0`, `v2.0` and `v3.0`; Afterwards, 15%: `DAO` driven development |
 |Main-blocks mining | 5% | Halving every 30 months | 
 |Backup-blocks mining | 5% | Ditto |
-|Web3 mining | 10% | To reward those who provide web3 resources |  
+|`Web3.0` mining | 10% | To reward those who provide `Web3.0` resources |  
 |Ecosystem development mining| 25% | Any other beneficiary activities to the ecosystem development |
 
 The ecosystem development mining activities include but are not limited to the following:
@@ -286,10 +286,10 @@ The ecosystem development mining activities include but are not limited to the f
 - Provide other kinds of oracle services; and
 - Transfer main assets from other well-known blockchains.
 
-## 7. Infrastructure Support for Web3
-To achieve Web3, a host of internet services can be built and offered in a decentralized manner as well as metered and compensated with crypto tokens.
+## 7. Infrastructure Support for `Web3.0`
+To achieve `Web3.0`, a host of internet services can be built and offered in a decentralized manner as well as metered and compensated with crypto tokens.
 
-Web3 enabling services include but are not limited to the following:
+`Web3.0` enabling services include but are not limited to the following:
 - DFS: Decentralized File Storage
 - DCOMP: Decentralized Computing Resources (e.g. VM leasing for application running)
 - DNET: Decentralized Networking, including traffic distribution/forwarding and routing, etc.
@@ -297,7 +297,7 @@ Web3 enabling services include but are not limited to the following:
 - DDNS: Decentralized DNS Service
 - DID: Decentralized Identity Service
 
-Armonia'score team endeavors to build the above list of decentralized Web3 services by effectively metering the health and usage of services with `$AMAX` as the main token to incentivize all contributors to Web3 enablement.
+Armonia'score team endeavors to build the above list of decentralized `Web3.0` services by effectively metering the health and usage of services with `$AMAX` as the main token to incentivize all contributors to `Web3.0` enablement.
 
 ## 8. xDAO Governance
 In a world of decentralization, technologies and products need to be constantly discussed and improved, and the entire community needs to interact in order to decide how to appropriately incentivize those who contributes and if possible, to penalize those who seek to damage or otherwise cause harm to the ecosystem. This requires that both onchain and offchain activities take place in an orchestrated manner. It is of paramount importance to make sure this type of governance adheres to the decentralization principle by getting all stakeholders within the ecosystem to freely participate by making proposals, voting/approving the proposal and executing both onchain and offchain.
@@ -327,7 +327,7 @@ The following basic `DAOs` will be founded:
 
 Technology roadmap:
 - v1.0: Armonia meta chain (WASM based) and the first child chain (EVM based) successfully launched, with the meta chain supporting `APOS` consensus algorithm and providing two-way cross-chain ability between `AMC` and the first child chain;
-- v2.0: enable Web3.0 resource mining and provide SDK for interfacing with Web3 resources; and
+- v2.0: enable `Web3.0` resource mining and provide SDK for interfacing with `Web3.0` resources; and
 - v3.0: provide layer0-base, layer-0, layer-1, etc. template implementation to enable rapid blockchain development;
 
 Note: After Armonia `v3.0` has been achieved, all development will be driven by the `developer DAO`.
