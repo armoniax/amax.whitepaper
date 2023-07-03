@@ -31,8 +31,8 @@
 To address growing user application needs, blockchain technology has evolved from distributed ledger, to smart contract technology that supports all sorts of application logic, through to providing layer-0 and layer-1 SDK technology that facilitates rapid building of new blockchains, and building layer-2 to solve problems that couldn't be solved with layer-1 technology, as well as bi-directional cross-chain technology.
 
 However, other than promoting security, reliability and decentralization, there hasn't to-date been a single blockchain technology that can sufficiently meet the following requirements:
-- massively parallel processing;
-- modularized and extensible; and
+- massively parallel processing
+- modularized and extensible
 - customizable and configurable
   
 Armonia's founding team believes it takes a multichain blockchain platform technology to achieve the above objectives, which can then service every individual and business user globally. It is also Armonia's founding team's belief that the to-be-built metaverse will be a truly decentralized, open and multi-chain universe which harbors users, assets, transactions and smart-contract based, mission-critical DApps.
