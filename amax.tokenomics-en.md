@@ -2,7 +2,7 @@
 -  Token tick：`$AMAX`
 - Total supply：`1B`
 - Inflation：only decided through `amax.dao` governance body. No inflation by default.
-- Issuing contract：`amax.token` deployed on Armonian network (https://amax.network)
+- Issuing contract：[amax.token](https://amaxscan.io/account/amax.token) deployed on Armonian network (https://amax.network)
 - Core usages：
   - Native token for Armonia network
   - Can be used to stake to get resources requried in Armonia network participation，
