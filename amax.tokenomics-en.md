@@ -1,0 +1,12 @@
+# `$AMAX` Tokenomics
+
+Following is the latest update of token distribution table after the network has been launched since April 8 of 2022.
+| Category         | Holding Account | Allocation Rate | Total Amount      | Unallocated Amount | Allocated Amount | Description                               |
+|------------------|-----------------|-----------------|-------------------|--------------------|------------------|-------------------------------------------|
+| Fund raising     | `amax.dao`      | `15.00%`        | `150,000,000.00`  | `146,275,134.97`   | `3,724,865.03`   | `2 M AMAX` used for vote staking          |                                         |
+| Ecosystem mining | `amax.ecodev`   | `25.00%`        | `250,000,000.00`  | `248,506,481.00`   | `1,493,519.00`   | `1458,469.00 AMAX` was burned thru DeGov  |    
+| Core Dev         | `amax.coredev`  | `12.00%`        | `120,000,000.00`  | `119,858,052.70`   | `141,947.30`     |                                           |
+| DAO Dev          | `amax.daodev`   | `18.00%`        | `180,000,000.00`  | `179,869,021.20`   | `130,978.80`     |                                           |
+| Foundation       | `amax.fund`     | `10.00%`        | `100,000,000.00`  | `100,000,000.00`   | `0.00`           |                                           |
+| Web3 Dev         | `amax.web3`     | `10.00%`        | `100,000,000.00`  | `100,000,000.00`   | `0.00`           |                                           |
+| Node mining      | `amax.fund`     | `10.00%`        | `100,000,000.00`  | `99,582,690.39`    | `417,309.61`     | Super nodes: `50 M`, Backup Nodes: `50 M` |
