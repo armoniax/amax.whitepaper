@@ -11,7 +11,7 @@
   - General Armonia multi-chain ecosystem development usage
   
 Following is the latest update of token distribution table after the network has been launched since April 8 of 2022.
-| Category         | Holding Account | Allocation Rate | Total Amount      | Unallocated Amount | Allocated Amount | Usage and status                          |
+| Category         | Holding Account | Allocation Rate | Total Amount      | Unallocated Amount | Allocated Amount | Usage & Status                            |
 |------------------|-----------------|-----------------|-------------------|--------------------|------------------|-------------------------------------------|
 | Fund raising     | `amax.dao`      | `15.00%`        | `150,000,000.00`  | `146,275,134.97`   | `3,724,865.03`   | `2 M AMAX` used for vote staking          |                
 | Node mining      | `amax.fund`     | `10.00%`        | `100,000,000.00`  | `99,582,690.39`    | `417,309.61`     | Super nodes: `50 M`, Backup Nodes: `50 M` |
