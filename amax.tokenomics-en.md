@@ -1,5 +1,14 @@
 # `$AMAX` Tokenomics
-
+-  Token tick：`$AMAX`
+- Total supply：`1B`
+- Inflation：only decided through `amax.dao` governance body. No inflation by default.
+- Issuing contract：`amax.token` deployed on Armonian network (https://amax.network)
+- Core usages：
+  - Native token for Armonia network
+  - Can be used to stake to get resources requried in Armonia network participation，
+  - Can be used to vote for network validator election in order to mine new tokens
+  - General Armonia multi-chain ecosystem development usage
+  
 Following is the latest update of token distribution table after the network has been launched since April 8 of 2022.
 | Category         | Holding Account | Allocation Rate | Total Amount      | Unallocated Amount | Allocated Amount | Usage and status                          |
 |------------------|-----------------|-----------------|-------------------|--------------------|------------------|-------------------------------------------|
