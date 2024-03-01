@@ -3,9 +3,13 @@
 - 代币名称：`$AMAX`
 - 发行总量：`10亿枚`
 - 增发计划：由`amax.dao`来决定, 默认不增发
-- 发行合约：在Armonia母链的系统发行：`amax.token`
-- 核心用途：Armonia母链原生代币，通过质押生成用于母链上的所需的资源，可以用于投票挖矿等，以及Armonia多链生态发展建设使用。
-
+- 发行合约：在Armonia母链的系统发行：[amax.token](https://amaxscan.io/account/amax.token)
+- 黑洞账户: [oooo](https://amaxscan.io/account/oooo) 
+- 核心用途：
+  - Armonia母链原生代币
+  - 通过质押生成用于母链上的所需的资源
+  - 可以用于投票挖矿等
+  - Armonia多链生态发展建设使用
 
 以下是自2022年4月8日主网上线以来，全网目前最新的AMAX总量分布表：
 | 分类              | 最初分配账户      | 分配比例         |  分配总量           | 未释放总量          | 已释放总量         | 用途和状态说明                              |
