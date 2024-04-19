@@ -14,7 +14,7 @@
   "tokens": [
     {
       "address": "0x185f404D5666b2A6dBA761d0d3089e3a8d050475",
-      "chainId": 65,
+      "chainId": 56,
       "name": "Armonia Meta Chain",
       "symbol": "AMAX",
       "decimals": 18
