@@ -9,9 +9,18 @@
   "keywords": [
     "armonia",
     "meta",
+    "chain",
+    "ERC20",
     "BEP20"
   ],
   "tokens": [
+    {
+      "address": "0x864ac60596435031cdD28257091C26C62e53e44d",
+      "chainId": 1,
+      "name": "Armonia Meta Chain",
+      "symbol": "AMAX",
+      "decimals": 18
+    },
     {
       "address": "0x185f404D5666b2A6dBA761d0d3089e3a8d050475",
       "chainId": 56,
